@@ -1,0 +1,15 @@
+TE A1 Corn Oil 10 ml/kg 48hrs
+TE A3 Corn Oil 10ml/kg 48hrs
+TE A2 Corn Oil 10 ml/kg 48hrs    
+TE E1 Aroclor 1260 200mg/kg
+TE E3 Aroclor 1260 200mg/kg
+TE E2 Aroclor 1260 200mg/kg 48hrs
+TE C2 Wy-14643 50mg/kg 48hrs
+TE C1 Wy-14643 50mg/kg 48hrs
+TE C3 Wy-14643 50mg/kg 48hrs
+TE B1 TCDD 10ug/kg 48hrs
+TE B2 TCDD 10ug/kg 48hrs
+TE B3 TCDD 10ug/kg 48hrs
+TE D1 PBDE 2mg/kg 48hrs
+TE D3 PBDE 2mg/kg 48hrs
+TE D2 PBDE 2mg/kg 48hrs 

@@ -1,0 +1,507 @@
+
+/*
+boxbody = boxleft + boxcenter
+boxwrap = boxbody + boxright
+
+
+*/
+
+.boxwrap   { width: 1000px; margin-left: auto; margin-right: auto;
+font: 11pt arial, helvetica;
+
+}
+
+.boxbody   {
+	width: 1000px; float: left;
+	background-color: whitesmoke;
+	margin: 0px 0px;
+	height: 100%;
+
+
+}
+.boxcenter {
+	overflow: auto;
+	width: 850px;
+	/*width: auto;*/
+	float: right;
+	margin: 0px 5px 0px 5px;
+	height: 100%;
+
+
+
+}
+
+.boxleft   {
+	width: 150px; float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	margin: 0px 0px 0px 0px;
+}
+.boxright  {
+	width: 180px; float: right;
+	background-color: whitesmoke;
+	margin: 0px 0px;
+	height: 200px;
+	border: 1px solid blue;
+
+}
+.boxheader {
+
+	width: 100%;  clear: both;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 10px 0px;
+
+
+}
+.boxfooter { width: 100%;  clear: both;  }
+
+.boxclear  { clear: both; }
+
+h2.bannerhead {
+font-family: arial, helvetica;
+
+}
+
+ #navlist
+{
+padding: 0 1px 1px;
+margin-left: 0;
+font: bold 12px Arial, Helvetica, sans-serif;
+background-color: whitesmoke;
+width: 120px;
+}
+
+#navlist li
+{
+list-style: none;
+margin: 0px 0px 0px 0px
+padding: 0px; 0px 1px 0px;
+border-top: 1px solid gray;
+text-align: left;
+display: inline;
+}
+
+#navlist li a
+{
+display: block;
+width: 120px;
+padding: 0em 0.5em 0em 0.75em;
+border-left: 1em solid silver;
+border-top: 1px solid gray;
+border-bottom: 1px solid gray;
+background: #CCD;
+text-decoration: none;
+}
+
+#navlist li a:link { color: #448; }
+#navlist li a:visited { color: #667; }
+
+#navlist li a:hover
+{
+	border-color: blue;/*#FE3;*/
+	color: #FF0;
+}
+
+h3.contenthead {
+
+	font-family: arial, helvetica;
+	border-bottom: 2px solid blue;
+	border-left: 1px solid blue;
+	border-top: 1px solid blue;
+	border-right: 1px solid blue;
+	position: relative;
+	width: 650px;
+	height: auto;
+	background-color: #ffff99;
+	z-index: 3;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+
+h4.advancedmenu{
+	font-family: arial, helvetica;
+	border-bottom: 2px solid blue;
+	border-top: 1px solid blue;
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	background-color: #ffff99;
+	z-index: 3;
+	text-align: center;
+}
+
+p.styletext {
+	color: black;
+  	margin: 10px 0px 10px 10px;
+   	text-decoration: none;
+    	font: 10pt arial, helvetica;
+}
+
+p.welcome {
+font: bold;
+margin: 0px 0px 0px 0px;
+}
+
+
+ #questionmenu
+{
+float: right;
+margin: 0px 0px 30px 30px;
+padding: 0;
+height: 20px;
+}
+
+#questionmenu ul
+{
+border: 0;
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+#questionmenu ul li
+{
+display: block;
+float: left;
+text-align: center;
+padding: 0;
+margin: 0;
+}
+
+#questionmenu ul li a
+{
+background: #fff;
+width: 78px;
+height: 18px;
+border-top: 1px solid #f5d7b4;
+border-left: 1px solid #f5d7b4;
+border-bottom: 1px solid #f5d7b4;
+border-right: none;
+padding: 0;
+margin: 0 0 10px 0;
+color: #f5d7b4;
+text-decoration: none;
+display: block;
+text-align: center;
+font: normal 10px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+}
+
+
+
+#questionmenu ul li a:hover
+{
+color: #930;
+background: #f5d7b4;
+}
+
+#questionmenu a:active
+{
+background: #c60;
+color: #fff;
+}
+
+#questionmenu li#active a
+{
+background: #c60;
+border: 1px solid #c60;
+color: #fff;
+}
+
+
+
+tr.question {
+	background-color: white;
+
+}
+td.questionparameter {
+	border-top: 1px solid rgb(213, 219, 225);
+	border-left: 1px solid rgb(213, 219, 225);
+	border-right: 1px solid rgb(213, 219, 225);
+	border-bottom: 1px solid rgb(213, 219, 225);
+	background-color: rgb(213, 230, 225);
+	font: normal 12px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+}
+
+td.questionanswer {
+	background-color: papayawhip;
+	text-align: center;
+	border-top: 1px solid rgb(213, 219, 225);
+	border-left: 1px solid rgb(213, 219, 225);
+	border-right: 1px solid rgb(213, 219, 225);
+	border-bottom: 1px solid rgb(213, 219, 225);
+	font: normal 10px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+
+
+}
+
+table.question{
+
+
+
+}
+
+#question table{
+	border-top: 2px solid gray;
+	border-left: 2px solid gray;
+	border-right: 2px solid gray;
+}
+
+#question tr{
+background-color: #ffff99;
+}
+
+
+
+
+table.results{
+	 /*aliceblue;*/
+	border: 1px solid gray;
+}
+
+td.results {
+	font: normal 10px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+	background-color: rgb(213, 219, 225);
+}
+
+#results table{
+	border: 1px solid gray;
+}
+
+#results td{
+
+	font: normal 10px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+	background-color: rgb(213, 219, 225);
+	/*border-top: 1px solid rgb(213, 230, 225);
+	border-left: 1px solid rgb(213, 230, 225);
+	border-right: 1px solid rgb(213, 230, 225);
+	border-bottom: 1px solid rgb(213, 230, 225);*/
+}
+
+#results td.colhead{
+background-color: rgb(213, 230, 225);
+}
+
+#results tr.colhead{
+background-color: rgb(213, 230, 225);
+}
+
+#results input{
+font: normal 9px/18px arial, verdana, lucida, sans-serif;
+}
+
+
+
+#results td.questionparameter {
+	border-top: 1px solid rgb(213, 219, 225);
+	border-left: 1px solid rgb(213, 219, 225);
+	border-right: 1px solid rgb(213, 219, 225);
+	border-bottom: 1px solid rgb(213, 219, 225);
+	background-color: rgb(213, 230, 225);
+	font: normal 12px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+}
+
+#results td.questionanswer {
+	background-color: papayawhip;
+	text-align: center;
+	border-top: 1px solid rgb(213, 219, 225);
+	border-left: 1px solid rgb(213, 219, 225);
+	border-right: 1px solid rgb(213, 219, 225);
+	border-bottom: 1px solid rgb(213, 219, 225);
+	font: normal 10px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+
+
+}
+
+#results tr.nextprev{
+background-color: black;
+}
+
+#results tr{
+
+background-color: rgb(213, 230, 225);
+
+}
+
+#results td.number {
+	text-align: right;
+}
+
+#results td.gtzero{
+	text-align: right;
+	background-color: rgb(219, 88, 68);
+}
+
+#results td.ltzero{
+	text-align: right;
+	background-color: rgb(130, 219, 78);
+}
+
+#results th.subhead{
+	font: italic 12px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+	background-color: rgb(213, 230, 225);
+	border-top: 1px solid rgb(213, 219, 225);
+	border-left: 1px solid rgb(213, 219, 225);
+	border-right: 1px solid rgb(213, 219, 225);
+	border-bottom: 1px solid rgb(213, 219, 225);
+
+}
+
+#results tr.mainheader {
+	border-top: 1px dashed blue;
+	border-left: 1px dashed blue;
+	border-right: 1px dashed blue;
+	border-bottom: 2px solid blue;
+	background-color: lightgray;
+}
+
+
+/* Sortable tables */
+table.sortable th {
+    background-color:#eee;
+    color:blue;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+table.sortable span.sortarrow {
+    color: black;
+    text-decoration: none;
+}
+
+th.mainheader {
+	border-top: 1px dashed blue;
+	border-left: 1px dashed blue;
+	border-right: 1px dashed blue;
+	border-bottom: 2px solid blue;
+	background-color: lightgray;
+}
+
+tr.titlerow {
+	background-color: #ffff99;
+}
+
+#navcontainer
+{
+display: static;
+margin: 0px 0 9px 0px;
+padding: 0;
+height: 20px;
+}
+
+#navcontainer ul
+{
+border: 0;
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+#navcontainer ul li
+{
+display: block;
+float: left;
+text-align: center;
+padding: 0;
+margin: 0;
+}
+
+#navcontainer ul li a
+{
+background: #fff;
+width: 78px;
+height: 18px;
+border-top: 1px solid black;
+border-left: 1px solid black;
+border-bottom: 1px solid black;
+border-right: 1px solid blue;
+padding: 0;
+margin: 0 0 10px 0;
+color: black;
+text-decoration: none;
+display: block;
+text-align: center;
+font: normal 10px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+}
+
+#navcontainer ul li a:hover
+{
+color: blue;
+background: #CCD;
+}
+
+
+#cdnaesttable table{
+border: 0px;
+max-width: 600px;
+
+}
+
+#cdnaesttable tr{
+	font: bold 12px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+	background-color: rgb(213, 230, 225);
+	border-top: 1px solid rgb(213, 219, 225);
+	border-left: 1px solid rgb(213, 219, 225);
+	border-right: 1px solid rgb(213, 219, 225);
+	border-bottom: 1px solid rgb(213, 219, 225);
+}
+
+#cdnaesttable td.bluegray{
+	background-color: rgb(213, 219, 225);
+}
+
+
+#cdnaesttable select {
+font: normal 10px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+
+}
+
+#cdnaesttable th{
+	border-top: 1px dashed blue;
+	border-left: 1px dashed blue;
+	border-right: 1px dashed blue;
+	border-bottom: 2px solid blue;
+	background-color: rgb(219,219,219);
+}
+
+#cdnaesttable td.questionparameter {
+	border-top: 1px solid rgb(213, 219, 225);
+	border-left: 1px solid rgb(213, 219, 225);
+	border-right: 1px solid rgb(213, 219, 225);
+	border-bottom: 1px solid rgb(213, 219, 225);
+	background-color: rgb(213, 230, 225);
+	font: normal 12px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+}
+
+#cdnaesttable td.questionanswer {
+	background-color: papayawhip;
+	text-align: center;
+	border-top: 1px solid rgb(213, 219, 225);
+	border-left: 1px solid rgb(213, 219, 225);
+	border-right: 1px solid rgb(213, 219, 225);
+	border-bottom: 1px solid rgb(213, 219, 225);
+	font: normal 10px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+}
+
+

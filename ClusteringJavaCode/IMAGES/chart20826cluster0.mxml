@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"	layout="horizontal"	backgroundGradientColors="[#ffffff,#ffffff]" initialize="initData();">
+<mx:Glow id="glowImage" duration="1000"        alphaFrom="1.0" alphaTo="0.3"   blurXFrom="0.0" blurXTo="10.0"        blurYFrom="0.0" blurYTo="10.0"        color="0x00FF00"/>
+<mx:Glow id="unglowImage" duration="1000"        alphaFrom="0.3" alphaTo="1.0"        blurXFrom="10.0" blurXTo="0.0"        blurYFrom="10.0" blurYTo="0.0"        color="0x0000FF"/>
+    <mx:Script>    <![CDATA[	
+import mx.collections.ArrayCollection;
+import mx.managers.CursorManager;
+            import mx.rpc.events.InvokeEvent;  
+        import mx.rpc.events.FaultEvent;
+            import mx.rpc.events.ResultEvent;
+  [Bindable]
+	
+public var seriesDataGridProvider:ArrayCollection;
+public var trxIndex:Number;
+public function handleClick(aParam:String):void {
+geneLabel.htmlText = "<b>Gene Selected</b>:" + aParam;
+seriesdgProvider(aParam);
+}
+// Data initialization
+public function initData():void{
+// Create data provider for DataGrid control
+seriesDataGridProvider = new ArrayCollection;
+}
+// Fill seriesDataGridProvider with the specified items
+public function seriesdgProvider(gene:String):void{
+trxIndex=1;
+seriesDataGridProvider.removeAll();
+for(var z:int = 0; z<treatmentsAC.length; z++){
+var obj:Object = {};
+obj.Treatment = treatmentsAC.getItemAt(z).Array;
+obj.FoldChange = treatmentsAC.getItemAt(z)[gene];
+seriesDataGridProvider.addItem(obj);
+}
+}
+
+ private var treatmentsAC:ArrayCollection = new ArrayCollection( [{Array: "VAD-1", },
+{Array: "BLANK", },
+{Array: "VAD-2", }]);
+]]>
+</mx:Script>
+<mx:Panel id="leftpanel" title="Cluster 1" height="100%" width="80%"><mx:LineChart id="linechart" height="100%" width="100%"	paddingLeft="5" paddingRight="5" showDataTips="true" dataProvider="{treatmentsAC}"><mx:horizontalAxis>
+<mx:CategoryAxis categoryField="Array"/>
+</mx:horizontalAxis>
+<mx:series></mx:series>
+</mx:LineChart>
+</mx:Panel>
+<mx:Panel id="legend" height="100%" width="10%">
+<mx:Legend dataProvider="{linechart}"/></mx:Panel>
+<mx:Panel id="rightpanel" title="Data Panel" height="100%" width="10%">
+<mx:Label id="geneLabel" text="No Gene Selected"/>
+<mx:DataGrid id="seriesDataGrid" dataProvider="{seriesDataGridProvider}">
+<mx:columns>
+<mx:DataGridColumn dataField="Treatment"/>
+<mx:DataGridColumn dataField="FoldChange"/>
+</mx:columns>
+</mx:DataGrid>
+</mx:Panel>
+</mx:Application>

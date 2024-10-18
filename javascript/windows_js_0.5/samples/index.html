@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" version="-//W3C//DTD XHTML 1.1//EN" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Test</title>
+	<script type="text/javascript" src="../javascripts/prototype.js"> </script> 
+	<script type="text/javascript" src="../javascripts/effects.js"> </script>
+	<script type="text/javascript" src="../javascripts/window.js"> </script>
+	<script type="text/javascript" src="../javascripts/debug.js"> </script>
+	<link href="../themes/default.css" rel="stylesheet" type="text/css" >	 </link>
+	<link href="../themes/theme1.css" rel="stylesheet" type="text/css" >	 </link>
+	<title>Sample Windows</title>
+	<style>
+	* {
+		margin: 3px;
+		padding: 3px;
+	}
+
+	body {
+		background:#DDD;
+		font-family: verdana, arial, sans-serif;
+		font-size:14px;
+	}
+	</style>
+</head>
+<body>
+<script>
+	showDebug();
+
+	win = new Window('dialog', {className: "", width:300, height:400, zIndex: 100, resizable: true, title: "Title"})
+	win.getContent().innerHTML= "<div style='padding:10px'><embed src=\"../../../IMAGES/imagesvg17555.svg\" width=740 height=490 name=\"heatmap\" type=\"image/svg+xml\" /> </div>"
+	win.showCenter();
+	win2 = new Window('dialog2', {className: "", top:100, left:350, zIndex:150, opacity:1, resizable: false, hideEffect: Effect.SwitchOff})
+	win2.getContent().innerHTML = "<embed src=\"../../../IMAGES/imagesvg17555.svg\" width=740 height=490 name=\"heatmap\" type=\"image/svg+xml\" />"
+	win2.show();
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+dataoutpufiles/
+datafiles/
+edgedata/
+phpinc/globalfilelocations.inc
+phpinc/globalvariables.inc.php
+phpmyadmin/
+phpMyAdmin-windows/

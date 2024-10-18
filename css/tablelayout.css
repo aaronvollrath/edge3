@@ -1,0 +1,127 @@
+table.results{
+	 /*aliceblue;*/
+	border: 1px solid gray;
+	max-width: 200px;
+}
+
+td.results {
+	font: normal 10px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+	background-color: rgb(213, 219, 225);
+}
+#results td.underlined{
+	font: underline 18px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+	background-color: rgb(213, 219, 225);
+
+
+}
+
+#results table{
+	border: 1px solid gray;
+}
+
+#results td{
+
+	font: normal 10px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+	background-color: rgb(213, 219, 225);
+	/*border-top: 1px solid rgb(213, 230, 225);
+	border-left: 1px solid rgb(213, 230, 225);
+	border-right: 1px solid rgb(213, 230, 225);
+	border-bottom: 1px solid rgb(213, 230, 225);*/
+}
+
+
+#results td.annname{
+	background-color: rgb(213, 230, 225);
+}
+
+#results td.colhead{
+	background-color: rgb(213, 230, 225);
+}
+
+#results tr.nextprev{
+	background-color: white;
+}
+
+#results tr{
+	background-color: rgb(213, 230, 225);
+}
+
+#results td.number {
+	text-align: right;
+}
+
+#results tr.mainheader {
+	border-top: 1px dashed blue;
+	border-left: 1px dashed blue;
+	border-right: 1px dashed blue;
+	border-bottom: 2px solid blue;
+	background-color: lightgray;
+}
+
+#results th.subhead{
+	font: italic 12px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+	background-color: rgb(213, 230, 225);
+	border-top: 1px solid rgb(213, 219, 225);
+	border-left: 1px solid rgb(213, 219, 225);
+	border-right: 1px solid rgb(213, 219, 225);
+	border-bottom: 1px solid rgb(213, 219, 225);
+	color: black;
+}
+
+
+/* alternate colored rows....*/
+tr.d0 td {
+	font: normal 10px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+	text-align: center;
+	background-color: white; color: black;
+}
+tr.d1 td {
+	font: normal 10px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+	text-align: center;
+	background-color: rgb(213, 219, 225); color: black;
+	
+}
+
+/* alternate colored rows via td....*/
+td.d0center {
+	font: normal 10px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+	text-align: center;
+	background-color: white; color: black;
+}
+td.d1center{
+	font: normal 10px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	white-space: nowrap;
+	text-align: center;
+	background-color: rgb(213, 219, 225); color: black;
+	
+}
+td.d0left {
+	font: normal 10px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	word-wrap: break-word;
+	text-align: left;
+	background-color: white; color: black;
+}
+td.d1left {
+	font: normal 10px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	padding: 2px 0.5em;
+	word-wrap: break-word;
+	text-align: left;
+	background-color: rgb(213, 219, 225); color: black;
+	
+}

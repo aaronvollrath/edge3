@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"	layout="horizontal"	backgroundGradientColors="[#ffffff,#ffffff]" initialize="initData();">
+<mx:Glow id="glowImage" duration="1000"        alphaFrom="1.0" alphaTo="0.3"   blurXFrom="0.0" blurXTo="10.0"        blurYFrom="0.0" blurYTo="10.0"        color="0x00FF00"/>
+<mx:Glow id="unglowImage" duration="1000"        alphaFrom="0.3" alphaTo="1.0"        blurXFrom="10.0" blurXTo="0.0"        blurYFrom="10.0" blurYTo="0.0"        color="0x0000FF"/>
+    <mx:Script>    <![CDATA[	
+import mx.collections.ArrayCollection;
+import mx.managers.CursorManager;
+            import mx.rpc.events.InvokeEvent;  
+        import mx.rpc.events.FaultEvent;
+            import mx.rpc.events.ResultEvent;
+  [Bindable]
+	
+public var seriesDataGridProvider:ArrayCollection;
+public var trxIndex:Number;
+public function handleClick(aParam:String):void {
+geneLabel.htmlText = "<b>Gene Selected</b>:" + aParam;
+seriesdgProvider(aParam);
+}
+// Data initialization
+public function initData():void{
+// Create data provider for DataGrid control
+seriesDataGridProvider = new ArrayCollection;
+}
+// Fill seriesDataGridProvider with the specified items
+public function seriesdgProvider(gene:String):void{
+trxIndex=1;
+seriesDataGridProvider.removeAll();
+for(var z:int = 0; z<treatmentsAC.length; z++){
+var obj:Object = {};
+obj.Treatment = treatmentsAC.getItemAt(z).Array;
+obj.FoldChange = treatmentsAC.getItemAt(z)[gene];
+seriesDataGridProvider.addItem(obj);
+}
+}
+
+ private var treatmentsAC:ArrayCollection = new ArrayCollection( [{Array: "VAD-1", Cd8a: -99999999, Rag1: -99999999, Dntt: -99999999, Cd3g: -99999999, Crip3: -99999999, Scap1: -99999999, Tcf7: -99999999, Rag1: -99999999, Tcrb_V13: -99999999, Rag1: -99999999, Tcf7: -99999999, Rag1: -99999999, Tcrb_V13: -99999999, ENSMUST00000003582: -99999999, LOC665500: -99999999, Cd8b1: -99999999, Ptpn7: -99999999, Pax1: -99999999, Lat: -99999999, g5830406J20Rik: -99999999, Tcrb_V13: -99999999, Rag1: -99999999, Rag1: -99999999, Tscot: -99999999},
+{Array: "VAD-2", Cd8a: 9.5518611337669, Rag1: 11.051977701204, Dntt: 5.7998531828962, Cd3g: 9.9175637318289, Crip3: 4.2396011374489, Scap1: 4.6767267946028, Tcf7: 4.6151519034736, Rag1: 10.414058189345, Tcrb_V13: 11.709544462439, Rag1: 9.6691879022487, Tcf7: 11.16760385611, Rag1: 10.546297058997, Tcrb_V13: 15.543542321149, ENSMUST00000003582: 4.1871546346806, LOC665500: 13.880975893517, Cd8b1: 30.578065034762, Ptpn7: 4.7705120809141, Pax1: 5.4453023634228, Lat: 8.5663536564203, g5830406J20Rik: 5.8698364397044, Tcrb_V13: 9.0184935705663, Rag1: 10.432058168661, Rag1: 9.4654224135774, Tscot: 5.9026631521083}]);
+]]>
+</mx:Script>
+<mx:Panel id="leftpanel" title="Cluster 1" height="100%" width="80%"><mx:LineChart id="linechart" height="100%" width="100%"	paddingLeft="5" paddingRight="5" showDataTips="true" dataProvider="{treatmentsAC}"><mx:horizontalAxis>
+<mx:CategoryAxis categoryField="Array"/>
+</mx:horizontalAxis>
+<mx:series><mx:LineSeries yField="Cd8a" form="curve" displayName="Cd8a" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Cd8a');"/>
+<mx:LineSeries yField="Rag1" form="curve" displayName="Rag1" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Rag1');"/>
+<mx:LineSeries yField="Dntt" form="curve" displayName="Dntt" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Dntt');"/>
+<mx:LineSeries yField="Cd3g" form="curve" displayName="Cd3g" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Cd3g');"/>
+<mx:LineSeries yField="Crip3" form="curve" displayName="Crip3" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Crip3');"/>
+<mx:LineSeries yField="Scap1" form="curve" displayName="Scap1" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Scap1');"/>
+<mx:LineSeries yField="Tcf7" form="curve" displayName="Tcf7" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Tcf7');"/>
+<mx:LineSeries yField="Rag1" form="curve" displayName="Rag1" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Rag1');"/>
+<mx:LineSeries yField="Tcrb-V13" form="curve" displayName="Tcrb-V13" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Tcrb-V13');"/>
+<mx:LineSeries yField="Rag1" form="curve" displayName="Rag1" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Rag1');"/>
+<mx:LineSeries yField="Tcf7" form="curve" displayName="Tcf7" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Tcf7');"/>
+<mx:LineSeries yField="Rag1" form="curve" displayName="Rag1" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Rag1');"/>
+<mx:LineSeries yField="Tcrb-V13" form="curve" displayName="Tcrb-V13" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Tcrb-V13');"/>
+<mx:LineSeries yField="ENSMUST00000003582" form="curve" displayName="ENSMUST00000003582" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('ENSMUST00000003582');"/>
+<mx:LineSeries yField="LOC665500" form="curve" displayName="LOC665500" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('LOC665500');"/>
+<mx:LineSeries yField="Cd8b1" form="curve" displayName="Cd8b1" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Cd8b1');"/>
+<mx:LineSeries yField="Ptpn7" form="curve" displayName="Ptpn7" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Ptpn7');"/>
+<mx:LineSeries yField="Pax1" form="curve" displayName="Pax1" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Pax1');"/>
+<mx:LineSeries yField="Lat" form="curve" displayName="Lat" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Lat');"/>
+<mx:LineSeries yField="5830406J20Rik" form="curve" displayName="5830406J20Rik" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('5830406J20Rik');"/>
+<mx:LineSeries yField="Tcrb-V13" form="curve" displayName="Tcrb-V13" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Tcrb-V13');"/>
+<mx:LineSeries yField="Rag1" form="curve" displayName="Rag1" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Rag1');"/>
+<mx:LineSeries yField="Rag1" form="curve" displayName="Rag1" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Rag1');"/>
+<mx:LineSeries yField="Tscot" form="curve" displayName="Tscot" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Tscot');"/>
+</mx:series>
+</mx:LineChart>
+</mx:Panel>
+<mx:Panel id="legend" height="100%" width="10%">
+<mx:Legend dataProvider="{linechart}"/></mx:Panel>
+<mx:Panel id="rightpanel" title="Data Panel" height="100%" width="10%">
+<mx:Label id="geneLabel" text="No Gene Selected"/>
+<mx:DataGrid id="seriesDataGrid" dataProvider="{seriesDataGridProvider}">
+<mx:columns>
+<mx:DataGridColumn dataField="Treatment"/>
+<mx:DataGridColumn dataField="FoldChange"/>
+</mx:columns>
+</mx:DataGrid>
+</mx:Panel>
+</mx:Application>

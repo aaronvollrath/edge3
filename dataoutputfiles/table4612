@@ -1,0 +1,22 @@
+<table id="results"><thead><tr><th class="subhead">Rank</th><th class="subhead">Gene Name</th><th class="subhead">Accuracy</th><th class="subhead">Confidence</th></tr>
+<tr><td class="results">1</td><td class="results">7827 6030422H21Rik</td><td class="results">33.33333</td><td class="results">556.66667</td></tr>
+<tr><td class="results">2</td><td class="results">21336 Cyp2b9</td><td class="results">66.66667</td><td class="results">1061.66667</td></tr>
+<tr><td class="results">3</td><td class="results">898 Cyp1a2</td><td class="results">100.0</td><td class="results">1513.33333</td></tr>
+<tr><td class="results">4</td><td class="results">15531 Fmo3</td><td class="results">100.0</td><td class="results">1638.33333</td></tr>
+<tr><td class="results">5</td><td class="results">10714 EG638251</td><td class="results">100.0</td><td class="results">1561.66667</td></tr>
+<tr><td class="results">6</td><td class="results">7451 Zfp59</td><td class="results">100.0</td><td class="results">1466.66667</td></tr>
+<tr><td class="results">7</td><td class="results">18570 Tes</td><td class="results">100.0</td><td class="results">1375.0</td></tr>
+<tr><td class="results">8</td><td class="results">20445 Olfr114</td><td class="results">100.0</td><td class="results">1275.0</td></tr>
+<tr><td class="results">9</td><td class="results">22175 Cfd</td><td class="results">100.0</td><td class="results">1183.33333</td></tr>
+<tr><td class="results">10</td><td class="results">220 Cyp2b9</td><td class="results">100.0</td><td class="results">1100.0</td></tr>
+<tr><td class="results">11</td><td class="results">8618 Cpeb2</td><td class="results">100.0</td><td class="results">1000.0</td></tr>
+<tr><td class="results">12</td><td class="results">26340 Krt23</td><td class="results">100.0</td><td class="results">900.0</td></tr>
+<tr><td class="results">13</td><td class="results">30511 4930405H06Rik</td><td class="results">100.0</td><td class="results">800.0</td></tr>
+<tr><td class="results">14</td><td class="results">33461 3100002J23Rik</td><td class="results">100.0</td><td class="results">700.0</td></tr>
+<tr><td class="results">15</td><td class="results">34474 Cyp1a1</td><td class="results">100.0</td><td class="results">600.0</td></tr>
+<tr><td class="results">16</td><td class="results">34984 A_51_P281078</td><td class="results">100.0</td><td class="results">500.0</td></tr>
+<tr><td class="results">17</td><td class="results">35985 Hamp2</td><td class="results">100.0</td><td class="results">400.0</td></tr>
+<tr><td class="results">18</td><td class="results">38709 Cyp1a2</td><td class="results">100.0</td><td class="results">300.0</td></tr>
+<tr><td class="results">19</td><td class="results">44840 Slc46a3</td><td class="results">100.0</td><td class="results">200.0</td></tr>
+<tr><td class="results">20</td><td class="results">45116 Chad</td><td class="results">100.0</td><td class="results">100.0</td></tr>
+</table>

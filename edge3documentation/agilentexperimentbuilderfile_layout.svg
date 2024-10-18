@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="744.09448"
+   height="1052.3622"
+   id="svg2">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4134">
+      <stop
+         style="stop-color:#eedf9d;stop-opacity:1"
+         offset="0"
+         id="stop4136" />
+      <stop
+         style="stop-color:#eedf9d;stop-opacity:0.49803922"
+         offset="0.5"
+         id="stop4140" />
+      <stop
+         style="stop-color:#eedf9d;stop-opacity:0"
+         offset="1"
+         id="stop4138" />
+    </linearGradient>
+    <linearGradient
+       x1="309.61176"
+       y1="123.02184"
+       x2="387.39349"
+       y2="159.89241"
+       id="linearGradient4132"
+       xlink:href="#linearGradient4134"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1">
+    <g
+       id="g7157">
+      <g
+         id="g6109">
+        <rect
+           width="170.61214"
+           height="55.959824"
+           x="540.2309"
+           y="76.354111"
+           style="fill:#ffffff;fill-opacity:1;stroke:#ff08e9;stroke-width:0.92856812;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect5126" />
+        <text
+           x="546.99762"
+           y="89.181732"
+           style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+           id="text6097"
+           xml:space="preserve"><tspan
+             x="546.99762"
+             y="89.181732"
+             style="font-size:10px"
+             id="tspan6099">javascript: </tspan><tspan
+             x="546.99762"
+             y="101.68173"
+             style="font-size:10px"
+             id="tspan6103">newagilentarrayformcheck.js</tspan><tspan
+             x="546.99762"
+             y="114.18173"
+             style="font-size:10px"
+             id="tspan6105">agilentexperiment-useradmin.js</tspan><tspan
+             x="546.99762"
+             y="126.68173"
+             style="font-size:10px"
+             id="tspan6107">expbuilderform.js</tspan><tspan
+             x="546.99762"
+             y="139.18173"
+             id="tspan6101" /></text>
+      </g>
+      <g
+         id="g7130">
+        <g
+           id="g3138">
+          <rect
+             width="177.81755"
+             height="24.779451"
+             x="316.41495"
+             y="159.6245"
+             style="fill:#def0e4;fill-opacity:1;stroke:#ff0000;stroke-width:0.79420888;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect2160" />
+          <text
+             x="319.71326"
+             y="176.55994"
+             style="font-size:10px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+             id="text3134"
+             xml:space="preserve"><tspan
+               x="319.71326"
+               y="176.55994"
+               id="tspan3136">agilentexperiment-useradmin.php</tspan></text>
+        </g>
+        <rect
+           width="93.43911"
+           height="19.192898"
+           x="257.5889"
+           y="103.32387"
+           style="fill:url(#linearGradient4132);fill-opacity:1;stroke:#1124f3;stroke-width:1.33000004;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect3143" />
+        <rect
+           width="93.43911"
+           height="19.192898"
+           x="424.01151"
+           y="105.34417"
+           style="fill:#eedf9d;fill-opacity:1;stroke:#1124f3;stroke-width:1.33000004;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4116" />
+        <text
+           x="259.10413"
+           y="114.43554"
+           style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+           id="text4118"
+           xml:space="preserve"><tspan
+             x="259.10413"
+             y="114.43554"
+             id="tspan4120">fileupupload-class.php</tspan></text>
+        <text
+           x="434.3656"
+           y="117.46601"
+           style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+           id="text4122"
+           xml:space="preserve"><tspan
+             x="434.3656"
+             y="117.46601"
+             id="tspan4124">utilityfunctions.inc</tspan></text>
+        <path
+           d="M 321.8494,123.18177 L 383.46588,159.22739"
+           inkscape:connection-start="#rect3143"
+           inkscape:connection-end="#g3138"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="path4143" />
+        <path
+           d="M 458.11067,125.20207 L 416.68793,158.88226"
+           inkscape:connection-start="#rect4116"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="path4145" />
+        <rect
+           width="149.65923"
+           height="20.864773"
+           x="125.9382"
+           y="159.05647"
+           style="fill:#fdf9ff;fill-opacity:1;stroke:#21ff08;stroke-width:1.67842948;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4147" />
+        <text
+           x="129.80461"
+           y="171.50916"
+           style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+           id="text5118"
+           xml:space="preserve"><tspan
+             x="129.80461"
+             y="171.50916"
+             id="tspan5120">./IMAGES/experiments&lt;file#&gt;.json</tspan></text>
+        <path
+           d="M 275.26657,168.4787 L 316.17775,170.49901"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+           id="path5122" />
+        <path
+           d="M 494.97475,172.01424 L 579.82756,131.60814"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="path6118" />
+        <g
+           id="g7226">
+          <g
+             transform="translate(87.883271,-42.931483)"
+             id="g7203" />
+          <g
+             id="g7264" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g7314">
+      <g
+         id="g7121">
+        <rect
+           width="222.73863"
+           height="40.911179"
+           x="485.88339"
+           y="249.79599"
+           style="fill:#feff06;fill-opacity:1;stroke:#ff08e9;stroke-width:1.33000004;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect6138" />
+        <text
+           x="506.59149"
+           y="275.0498"
+           style="font-size:10px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+           id="text7109"
+           xml:space="preserve"><tspan
+             x="506.59149"
+             y="275.0498"
+             id="tspan7111">./phpinc/agilentexperimentbuilder.inc</tspan></text>
+        <g
+           transform="translate(18.687822,-0.5050763)"
+           id="g7339">
+          <rect
+             width="149.65923"
+             height="20.864773"
+             x="571.66803"
+             y="186.83565"
+             style="fill:#fdf9ff;fill-opacity:1;stroke:#21ff08;stroke-width:1.67842948;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect7113" />
+          <text
+             x="584.8783"
+             y="200.29851"
+             style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+             id="text7115"
+             xml:space="preserve"><tspan
+               x="584.8783"
+               y="200.29851"
+               id="tspan7117">./IMAGES/arraylist&lt;file#&gt;.json</tspan></text>
+        </g>
+        <path
+           d="M 605.58645,249.79598 L 641.44687,208.37973"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+           id="path7119" />
+        <path
+           d="M 579.82756,132.61829 L 581.34279,248.78583"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="path7344" />
+        <path
+           d="M 501.03566,124.53707 L 577.30218,250.30106"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="path7347" />
+        <g
+           transform="translate(-52.022856,-2.0203051)"
+           id="g7355">
+          <rect
+             width="209.42206"
+             height="25.06922"
+             x="71.30806"
+             y="244.33243"
+             style="fill:#feff06;fill-opacity:1;stroke:#ff08e9;stroke-width:1.00951898;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect7349" />
+          <text
+             x="78.286819"
+             y="259.89752"
+             style="font-size:10px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+             id="text7351"
+             xml:space="preserve"><tspan
+               x="78.286819"
+               y="259.89752"
+               id="tspan7353">./phpinc/edge3-login-form-welcome.inc</tspan></text>
+        </g>
+        <path
+           d="M 138.89598,242.21984 L 350.01786,184.13607"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="path7360" />
+        <g
+           transform="translate(180.56476,18.182761)"
+           id="g7362">
+          <g
+             transform="translate(-17.67767,23.233509)"
+             id="g7374">
+            <rect
+               width="209.42206"
+               height="25.06922"
+               x="73.833443"
+               y="244.83751"
+               style="fill:#feff06;fill-opacity:1;stroke:#ff08e9;stroke-width:1.00951898;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               id="rect7364" />
+            <text
+               x="261.12442"
+               y="278.08026"
+               transform="translate(-180.56476,-18.182761)"
+               style="font-size:10px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+               id="text7370"
+               xml:space="preserve"><tspan
+                 x="261.12442"
+                 y="278.08026"
+                 id="tspan7372">./phpinc/newagilentarray-nonadmin.inc</tspan></text>
+          </g>
+          <path
+             d="M 402.04071,185.14622 L 332.34019,286.66655"
+             transform="translate(-180.56476,-18.182761)"
+             style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path7379" />
+          <g
+             transform="matrix(1.0240019,0,0,1,29.554698,76.771585)"
+             id="g7381">
+            <rect
+               width="209.42206"
+               height="25.06922"
+               x="73.833443"
+               y="244.83751"
+               style="fill:#feff06;fill-opacity:1;stroke:#ff08e9;stroke-width:1.00951898;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               id="rect7383" />
+          </g>
+        </g>
+      </g>
+      <rect
+         width="125.56043"
+         height="18.989347"
+         x="523.61334"
+         y="367.07547"
+         transform="translate(87.883271,-42.931483)"
+         style="fill:#eedf9d;fill-opacity:1;stroke:#1124f3;stroke-width:1.53355181;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7197" />
+      <text
+         x="525.27936"
+         y="378.59042"
+         transform="translate(87.883271,-42.931483)"
+         style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         id="text7199"
+         xml:space="preserve"><tspan
+           x="525.27936"
+           y="378.59042"
+           id="tspan7201">edge_update_user_activity.inc</tspan></text>
+      <path
+         d="M 573.76665,291.21224 L 552.55344,325.05235"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="path7258" />
+      <path
+         d="M 626.79965,290.70716 L 673.26667,324.0422"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="path7224" />
+      <g
+         transform="translate(-108.5914,-54.548252)"
+         id="g7241">
+        <g
+           transform="translate(93.944187,13.131983)"
+           id="g7253">
+          <rect
+             width="81.553108"
+             height="14.883047"
+             x="523.39368"
+             y="366.85577"
+             style="fill:#eedf9d;fill-opacity:1;stroke:#1124f3;stroke-width:1.09416604;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect7243" />
+          <text
+             x="416.18286"
+             y="322.52698"
+             transform="translate(108.5914,54.548252)"
+             style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+             id="text7249"
+             xml:space="preserve"><tspan
+               x="416.18286"
+               y="322.52698"
+               style="font-size:8px"
+               id="tspan7251">updatearraylist.php</tspan></text>
+        </g>
+      </g>
+      <rect
+         width="143.6409"
+         height="18.887068"
+         x="538.31171"
+         y="357.02505"
+         style="fill:#eedf9d;fill-opacity:1;stroke:#1124f3;stroke-width:1.63583064;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7284" />
+      <text
+         x="541.44177"
+         y="368.99399"
+         style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         id="text7286"
+         xml:space="preserve"><tspan
+           x="541.44177"
+           y="368.99399"
+           style="font-size:8px"
+           id="tspan7288">./phpinc/createdraganddroplist.inc</tspan></text>
+      <path
+         d="M 598.51538,291.21224 L 600.03061,356.36708"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="path7290" />
+      <path
+         d="M 461.13464,184.64115 L 570.73619,249.29091"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+         id="path7195" />
+    </g>
+    <path
+       d="M 452.04326,184.13607 L 452.54834,339.69956"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path7389" />
+    <text
+       x="289.91379"
+       y="354.34677"
+       style="font-size:9px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text7391"
+       xml:space="preserve"><tspan
+         x="289.91379"
+         y="354.34677"
+         style="font-size:8px"
+         id="tspan7393">./phpinc/agilentadminrnasubmissionqueue.inc</tspan></text>
+  </g>
+</svg>

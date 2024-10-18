@@ -1,0 +1,275 @@
+HOW TO USE DRASTICTOOLS, VERSION 0.6.12:
+=================================================
+1. Introduction
+DrasticTools is a PHP5 software package for displaying data from different sources in various visualisations.
+In this version the following data sources are supported:
+ - MySQL (support for other data sources is planned)
+and the following data visualisations are supported:
+ - DrasticGrid: an Ajax-based data grid
+ - DrasticCloud: an component to display data in a cloud
+ - DrasticMap: a component to display data on a Google Map
+
+2. Prerequisites:
+- PHP5 or higher
+- Json (see http://www.json.org); Json is included in PHP by default from PHP 5.2.0 and higher.
+- for DrasticMap: GD library installed (see http://www.php.net/gd) and of course a Google ApiKey
+
+3. Usage:
+The best way to see how DrasticTools work is to look at the examples provided in the release
+and see them in action on http://www.DrasticData.nl
+DrasticTools uses Ajax requests to communicate with the server. 
+By default DrasticTools calls the same php file from which it was invoked to process AJAX requests.
+This means that the instantiation of the data source should be done BEFORE ANY OUTPUT IS GENERATED,
+i.e. before the header information is sent to the client. This means: before the <html> tag in the file.
+
+4. Connecting to a Data Source:
+At this moment only a MySQL can be used as data source. This is done using the class drasticSrcMySQL.
+To connect to a single table, put the following in the php file before the <html> tag:
+<?php
+define("PATHDRASTICTOOLS", "<PATHTODRASTICTOOLS>");
+include(PATHDRASTICTOOLS."drasticSrcMySQL.class.php");
+$src = new drasticSrcMySQL("<HOSTNAME>", "<USERNAME>", "<PASSWORD>", "<DATABASENAME>", "<TABLENAME>");
+?>
+
+To use parts of a MySQL table, you can use a subclass like this:
+<?php
+define("PATHDRASTICTOOLS", "<PATHTODRASTICTOOLS");
+include(PATHDRASTICTOOLS."drasticSrcMySQL.class.php");
+class mysrc extends drasticsrcmysql {
+	protected function select(){
+		$res = mysql_query("SELECT * FROM $this->table WHERE <PUTYOURWHERECLAUSEHERE>" . $this->orderbystr, $this->conn) or die(mysql_error());
+		return ($res);
+	}	
+	protected function add(){
+		mysql_query("INSERT INTO $this->table (Continent) VALUES('Europe')", $this->conn) or die(mysql_error());
+		if (mysql_affected_rows($this->conn) == 1) return(true); else return(false);
+	}
+}
+?>
+
+5. Adding a visualisation:
+To add a DrasticGrid with default options:
+<script type="text/javascript" src="js/mootools-1.2-core.js"></script>
+<script type="text/javascript" src="js/mootools-1.2-more.js"></script>
+<script type="text/javascript" src="js/drasticGrid.js"></script>
+<div id="grid1"></div>
+<script type="text/javascript">
+var thegrid = new drasticGrid('grid1');
+</script>
+
+To add a DrasticCloud with default options:
+<script type="text/javascript" src="js/mootools-1.2-core.js"></script>
+<script type="text/javascript" src="js/mootools-1.2-more.js"></script>
+<script type="text/javascript" src="js/drasticCloud.js"></script>
+<div id="cloud1"></div>
+<script type="text/javascript">
+var thecloud = new drasticCloud('cloud1');
+</script>
+
+To add a DrasticMap with default options:
+<script type="text/javascript" src="js/mootools-1.2-core.js"></script>
+<script type="text/javascript" src="js/mootools-1.2-more.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps?file=api&v=2&key=<YOUR GAPIKEY HERE!!!>"></script>
+<script type="text/javascript" src="js/markermanager.js"></script>
+<script type="text/javascript" src="js/drasticMap.js"></script>
+<div id="map1"></div>
+<script type="text/javascript">
+var themap = new drasticMap('map1');
+</script>
+
+5. Advanced Options:
+You can use DrasticSrcMySQL with the following options:
+	public $add_allowed 	= true;		// may the user add records? Default is true.
+	public $delete_allowed  = true;		// may the user delete records? Default is true.
+	public $editablecols;				// array of columnnames to be editable. Defaults to all columns except the id column
+	public $defaultcols;				// array of columnnames and values; only records that satisfy these conditions will be selected;
+										// added records will have these values as default
+	public $sortcol;					// name of column to sort on initially. Defaults to the id column.
+	public $sort;						// sort ascending (a) or descending (d)? Default is a.									
+
+Example:
+<?php 
+$options = array(
+	"add_allowed" => false,       
+	"delete_allowed" => false,     
+	"editablecols" => array("Population", "LocalName")
+);
+$src = new drasticsrcmysql($server, $user, $pw, $db, $table, $options);
+?>
+
+You can use DrasticGrid with the following options:
+		path 	     // path of the php file to call
+		pathimg      // path to images
+		pagelength   // length of the grid. If dataset is longer the grid will do pagination
+		colwidth	 // default width (in pixels) of a column
+		pp 		     // page pointer
+		sortcol 	 // name of column to sort on initially. Overrules the default of the data source
+		sort	 	 // sort ascending (a) or descending (d)? Overrules the default of the data source
+		columns		 // configuration of the columns to show:
+						- their name to be displayed,
+						- the width (in pixels) per column
+						- the type of the column
+						- if the column is editable
+						If columns is not specified the defaults from the datasource are taken
+		//Events:
+		onClick		
+		onMouseOver
+		onAddStart
+		onAddComplete
+		onDeleteStart
+		onDeleteComplete
+		onUpdateStart
+		onUpdateComplete
+
+Example:
+var thegrid = new drasticGrid('grid1', {
+	pathimg:"img/",
+	pagelength: 10,	
+	columns: [
+		{name: 'id', width: 40},
+		{name: 'name'},		
+		{name: 'email', type: DDTYPEMAILTO, width: 140, editable: false},
+		{name: 'www', type: DDTYPEURL, width: 180, editable: true},
+		{name: 'present', editable: false}				
+		],	
+	onClick: function(id){thegrid.DefaultOnClick(id); alert('clicked on row with id = '+id)}	
+});
+
+You can use DrasticCloud with the following options:
+		path 	     // path of the php file to call
+		nroffonts  	 // The number of different font sizes used in the cloud	
+		namecol 	 // name to show in the cloud
+		sizecol 	 // column to use to resize the items in the cloud
+		log 		 // use a logarithmic distribution (true) or linear (false) (default: true)
+		colorcol	 // column which should be used to color items
+		sortcol 	 // name of column to sort on initially. Overrules the default of the data source
+		sort	 	 // sort ascending (a) or descending (d)? Overrules the default of the data source
+		showmenu	 // Show the menu? (default: true)	
+		showmenufull // Show the menu opened (default: false)		
+		shownamecol  // Show the name selector? (default: true)		
+		showlog 	 // Show the log/linear selector? (default: true)
+		showsizecol  // Show the column selector? (default: true)
+		showcolorcol // Show the color column selector? (default: true)		
+		showsortcol  // Show the sortcolumn selector? (default: true)
+		showsort	 // Show the ascending / descending sort selector? (default: true)
+		//Events:
+		onClick
+		onMouseOver
+
+Example:
+var thecloud = new drasticCloud('cloud', {
+	showmenufull: false, 
+	namecol: "Name",
+	sizecol: "Height",
+	colorcol: "Climbed",
+	sortcol: "Name",
+	sort: "a",
+	onClick: function(id){alert('clicked on tag with id = '+id}	
+});
+
+You can use DrasticMap with the following options:	
+		pathimg 	 // path to images
+		path 		 // path of the php file to call
+		coordcol 	 // the column having the coordinates
+		displaycol 	 // variable to be displayed in bars or circles
+		renamecols	 // array of alternative column names to use
+		icon		 // icon to use for marker; "bar", "circle". Defaults to the default Google marker
+		//Events:
+		onClick
+		onMouseOver		
+
+Example:
+var thegrid = new drasticMap('map1', {pathimg:"img/", displaycol: "SurfaceArea"});
+
+
+6. Style sheets
+You can use style sheets to influence the appearance of the DrasticGrid.
+For the grid two style sheets are provided in the DrasticTools release:
+ grid_default.css
+ cloud_default.css
+ grid_yellow.css
+The width of the columns in the grid can be set via a css file in percentages.
+See the style sheets in the examples for how to do this.
+For the DrasticMap component, no style sheets are needed. 
+
+7. Licenses:
+DrasticTools is released under the GPL open source license.
+A file License.txt describing this license is distributed with its release package.
+DrasticTools uses the mootools library (see http://mootools.net/), which has a MIT Style License.
+DrasticMap uses the MarkerManager developed by Doug Ricket and others which has an Apache license: see http://www.apache.org/licenses/LICENSE-2.0
+
+8. Donations:
+If you like the DrasticTools software and would like it to be improved in future, 
+please donate on http://www.drasticdata.nl 
+If you want to use the DrasticTools software under a different license, please contact info@drasticdata.nl 
+
+9. Changes from earlier versions:
+From version 0.6.11 to 0.6.12:
+- support for URL's and email adresses (mailto) in the grid
+- scrollbar for pagination
+- column width of grid in absolute pixel value instead of a percentage
+- easier configuration of drasticgrid via the 'columns' option
+- some visual redesign
+- now using mootools 1.2
+From version 0.6.10 to 0.6.11:
+- Events: DrasticGrid, -Map and -Cloud now have events such as OnClick, OnMouseOver and OnChange.
+- Class DrasticCommon removed. Communication between drastictools components can be done via events such as the Onclick event.
+- Drastic* classes use the Mootools Options facility
+- Better support for various Character sets
+- Better detection of primary key column
+- bug fix: insert special characters
+From version 0.6.9 to 0.6.10:
+- Bug Fix: DrasticTools was not working on FireFox without Firebug. It did work on IE and FF with firebug enabled.
+From version 0.6.8 to 0.6.9:
+- A huge performance improvement on using Drasticgrid on Internet Explorer
+- DrasticCloud was added
+From version 0.6.7 to 0.6.8:
+- changed look and feel and style
+- output is in utf8 to support other character sets
+- Bug Fix: adding rows when table is empty
+- Bug Fix: grid supports checkboxes
+- some minor bug fixes
+From version 0.6.6 to 0.6.7:
+- redesign in architecture: more javascript, less php
+- grid supports checkboxes
+- selection of row
+- many new options
+From version 0.6.5 to 0.6.6:
+- options "showcols" and "showcolsnot" were added. May be used to explicitly show or not to show columns. 
+- option "defaultcols" was added to drasticSRCMySQL to provide easy way to specify a simple WHERE clause and corresponding ADD function (example3a)
+- fixed bug: Drasticgrid showing "null" if no content in cell (was a problem in IE)
+- DrasticMap (alpha): interactively change the label, tooltip and bar height
+- some small bug fixes
+From version 0.6.4 (MySQLPHPGrid) to 0.6.5 (DrasticTools):
+- grid is now completely Ajax based, also for sorting, paging, delete, add, update
+- configurable which columns are editable; configurable look for editable fields
+- improved configurability via css, also in ie
+- ability to display column names different from table field names
+- new component to visualize data on a google map (alpha version)
+- new architecture which may support multiple data sources (not only MySQL) and other visualisations
+- many more...
+From version 0.6.3 to 0.6.4:
+- the width of the grid and the individual columns can be controlled in the style sheet
+- tooltips on cells and columns headers
+- several minor improvements in presentation of grid
+- width of input field same as column width
+- several bugfixes:
+  - bug fix: error on adding or deleting a record right on the border of the display page
+  - bug fix: ability to insert commas
+  - bug fix: using the example sql file in MySQL strict mode
+From version 0.6.2 to 0.6.3:
+- using mootools library for ajax update requests
+- some visual effects on update and delete
+- tooltips on add, delete and sort buttons
+- upon add, the grid navigates to the added row
+- style sheets updated
+- several minor bug fixes
+From version 0.6.1 to 0.6.2:
+- bug fix in the update of the presentation of the grid
+From version 0.5.1 to 0.6.1:
+- Update of cells is handled via an AJAX request => no full page load is needed.
+- Support for MySQL ENUM Datatype via drop down lists.
+- The ability to disallow adding, deleting or cell updating (used to be one setting for all).
+- optional arguments removed and implemented as public variables of the class
+- you may specify if the id field will be shown or not; it is no longer allowed to edit the id field.
+- many smaller bug fixes

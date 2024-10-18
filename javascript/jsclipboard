@@ -1,0 +1,114 @@
+
+	/*
+	var samplename = document.forms[0].samplename.value;
+	var rnasize = document.forms[0].rnagroupsize.value;
+	var age = document.forms[0].age.value;
+	var dose = document.forms[0].dose.value;
+	var dosetimehrs = document.forms[1].dosehours.value;
+	var dosetimemins = document.forms[1].doseminutes.value;
+	var harvesthrs = document.forms[1].harvesthours.value;
+	var harvestmins = document.forms[1].harvestminutes.value;
+	var notPregnant = document.forms[1].gestation.disabled;
+	var gestationPeriod = document.forms[1].gestation.value;
+	var concentration = document.forms[1].concentration.value;
+	var duration = document.forms[1].duration.value;
+
+
+
+	//document.write(notPregnant);
+
+	// Validating that gestation period has a non-blank and numeric value when organism is pregnant
+
+	if(notPregnant == false){
+		if(isBlank(gestationPeriod)){
+			alert("You've left a required field blank!");
+			return false;
+		}
+		if(!isNumber(gestationPeriod)){
+			alert("You need to enter a numerical value in one of the fields that require one.  Please rectify this situation.");
+			return false;
+		}
+		if(gestationPeriod<=0){
+			alert("Please enter a valid gestation period (>0)");
+			return false;
+		}
+	}
+
+	// Validating all the 'other' input fields... when enabled, text must be filled
+	if(document.forms[1].otherChemical.disabled == false && document.forms[1].otherChemical.value== ''){
+		alert("You've left the chemical name field blank!");
+		return false;
+	}
+
+	if(document.forms[1].otherOrganism.disabled == false && document.forms[1].otherOrganism.value== ''){
+		alert("You've left the organism name field blank!");
+		return false;
+	}
+
+	if(document.forms[1].otherGenevariation.disabled == false && document.forms[1].otherGenevariation.value== ''){
+		alert("You've left the Gene Variation field blank!");
+		return false;
+	}
+
+	if(document.forms[1].otherTissue.disabled == false && document.forms[1].otherTissue.value== ''){
+		alert("You've left the Tissue blank!");
+		return false;
+	}
+
+	if(document.forms[1].otherVehicle.disabled == false && document.forms[1].otherVehicle.value== ''){
+		alert("You've left the Vehicle field blank!");
+		return false;
+	}
+
+	if(document.forms[1].otherRoute.disabled == false && document.forms[1].otherRoute.value== ''){
+		alert("You've left the Route field blank!");
+		return false;
+	}
+
+	if(document.forms[1].otherControl.disabled == false && document.forms[1].otherControl.value== ''){
+		alert("You've left the Control field blank!");
+		return false;
+	}
+
+	if(document.forms[1].otherStrain.disabled == false && document.forms[1].otherStrain.value== ''){
+		alert("You've left the Strain field blank!");
+		return false;
+	}
+
+	if(isBlank(rnasize) || isBlank(age) || isBlank(dose) || isBlank(dosetimehrs) || isBlank(dosetimemins) || 					isBlank(harvesthrs) || isBlank(harvestmins) || isBlank(samplename) || isBlank(concentration)){
+		alert("You've left the Concentration field blank!");
+		return false;
+	}
+
+
+
+	if(isNumber(rnasize) && isNumber(age)  && isNumber(dose) && isNumber(dosetimehrs) && isNumber(dosetimemins) && isNumber(harvesthrs) && 		isNumber(harvestmins)  && isNumber(concentration)&& isNumber(duration)){
+		if(rnasize > 0 && age > 0 && dose >= 0 && dosetimehrs >= 0 && dosetimemins >= 0 && harvesthrs >= 0 && harvestmins >= 0){
+			if(dosetimehrs < 24 && dosetimemins < 60 && harvesthrs < 24 && harvestmins < 60){
+				return true;
+			}
+			else{
+				/*
+				if(accessnum < 1){
+					alert("Please enter a valid access number.  ie. >= 1");
+					return false;
+				}
+				else{
+				*/
+				//if{
+					alert("Please enter a valid time value.  Hours >= 00 and <=23, Minutes >= 00 and <=59");
+					return false;
+				//}
+			}
+		}
+		else{
+			alert("Please enter a valid numerical value in the fields that require one.");
+			return false;
+		}
+	}
+	else{
+		alert("You need to enter a numerical value in one of the fields that require one.  Please rectify this situation.");
+		return false;
+	}
+
+*/

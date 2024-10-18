@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"	layout="horizontal"	backgroundGradientColors="[#ffffff,#ffffff]" initialize="initData();">
+<mx:Glow id="glowImage" duration="1000"        alphaFrom="1.0" alphaTo="0.3"   blurXFrom="0.0" blurXTo="10.0"        blurYFrom="0.0" blurYTo="10.0"        color="0x00FF00"/>
+<mx:Glow id="unglowImage" duration="1000"        alphaFrom="0.3" alphaTo="1.0"        blurXFrom="10.0" blurXTo="0.0"        blurYFrom="10.0" blurYTo="0.0"        color="0x0000FF"/>
+    <mx:Script>    <![CDATA[	
+import mx.collections.ArrayCollection;
+import mx.managers.CursorManager;
+            import mx.rpc.events.InvokeEvent;  
+        import mx.rpc.events.FaultEvent;
+            import mx.rpc.events.ResultEvent;
+  [Bindable]
+	
+public var seriesDataGridProvider:ArrayCollection;
+public var trxIndex:Number;
+public function handleClick(aParam:String):void {
+geneLabel.htmlText = "<b>Gene Selected</b>:" + aParam;
+seriesdgProvider(aParam);
+}
+// Data initialization
+public function initData():void{
+// Create data provider for DataGrid control
+seriesDataGridProvider = new ArrayCollection;
+}
+// Fill seriesDataGridProvider with the specified items
+public function seriesdgProvider(gene:String):void{
+trxIndex=1;
+seriesDataGridProvider.removeAll();
+for(var z:int = 0; z<treatmentsAC.length; z++){
+var obj:Object = {};
+obj.Treatment = treatmentsAC.getItemAt(z).Array;
+obj.FoldChange = treatmentsAC.getItemAt(z)[gene];
+seriesDataGridProvider.addItem(obj);
+}
+}
+
+ private var treatmentsAC:ArrayCollection = new ArrayCollection( [{Array: "VAD-1", Socs1: -1.3191342606093, D17H6S56E_5: -1.1338883677249, Tlr2: -1.040943841187, T2bp: -1.1480291089702, Steap4: 1.1517499445076, Ankrd5: -1.8115945271343, Magee2: 1.1611673079477},
+{Array: "VAD-2", Socs1: 1.2682007333902, D17H6S56E_5: 1.0754105681242, Tlr2: 1.1113127576734, T2bp: 1.0636209916729, Steap4: 1.3646428372018, Ankrd5: -1.1611218561662, Magee2: 2.0384121533574},
+{Array: "VAS 1", Socs1: -1.2575260779379, D17H6S56E_5: -1.075219668173, Tlr2: 1.0222566396082, T2bp: 1.0084525999695, Steap4: 1.106804458691, Ankrd5: -1.2578747517877, Magee2: 1.0262013933649},
+{Array: "VAS 2", Socs1: -1.1297537719489, D17H6S56E_5: 2.2267886549725, Tlr2: 1.0060150087203, T2bp: -1.0367520433635, Steap4: 1.0446528657904, Ankrd5: -1.045272199812, Magee2: 1.8602572251849},
+{Array: "VAS 3", Socs1: -1.033789459988, D17H6S56E_5: -1.6435389468822, Tlr2: 1.1521196929595, T2bp: 1.0124309195418, Steap4: 1.1848086057957, Ankrd5: 1.1502782287436, Magee2: 1.0884871339651},
+{Array: "VAD 3", Socs1: -1.1238788541126, D17H6S56E_5: 1.1927496560647, Tlr2: 1.1375324644679, T2bp: 1.1476683368308, Steap4: 1.4507079799792, Ankrd5: 1.0191841240778, Magee2: 2.3859701166583}]);
+]]>
+</mx:Script>
+<mx:Panel id="leftpanel" title="Cluster 1" height="100%" width="80%"><mx:LineChart id="linechart" height="100%" width="100%"	paddingLeft="5" paddingRight="5" showDataTips="true" dataProvider="{treatmentsAC}"><mx:horizontalAxis>
+<mx:CategoryAxis categoryField="Array"/>
+</mx:horizontalAxis>
+<mx:series><mx:LineSeries yField="Socs1" form="curve" displayName="Socs1" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Socs1');"/>
+<mx:LineSeries yField="D17H6S56E-5" form="curve" displayName="D17H6S56E-5" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('D17H6S56E-5');"/>
+<mx:LineSeries yField="Tlr2" form="curve" displayName="Tlr2" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Tlr2');"/>
+<mx:LineSeries yField="T2bp" form="curve" displayName="T2bp" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('T2bp');"/>
+<mx:LineSeries yField="Steap4" form="curve" displayName="Steap4" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Steap4');"/>
+<mx:LineSeries yField="Ankrd5" form="curve" displayName="Ankrd5" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Ankrd5');"/>
+<mx:LineSeries yField="Magee2" form="curve" displayName="Magee2" rollOverEffect="{glowImage}"       mouseUpEffect="{unglowImage}"  click="handleClick('Magee2');"/>
+</mx:series>
+</mx:LineChart>
+</mx:Panel>
+<mx:Panel id="legend" height="100%" width="10%">
+<mx:Legend dataProvider="{linechart}"/></mx:Panel>
+<mx:Panel id="rightpanel" title="Data Panel" height="100%" width="10%">
+<mx:Label id="geneLabel" text="No Gene Selected"/>
+<mx:DataGrid id="seriesDataGrid" dataProvider="{seriesDataGridProvider}">
+<mx:columns>
+<mx:DataGridColumn dataField="Treatment"/>
+<mx:DataGridColumn dataField="FoldChange"/>
+</mx:columns>
+</mx:DataGrid>
+</mx:Panel>
+</mx:Application>

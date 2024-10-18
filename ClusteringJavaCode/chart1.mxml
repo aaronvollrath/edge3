@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Glow id="glowImage" duration="1000"
+        alphaFrom="1.0" alphaTo="0.3" 
+        blurXFrom="0.0" blurXTo="50.0" 
+        blurYFrom="0.0" blurYTo="50.0" 
+        color="0x00FF00"/>
+    <mx:Glow id="unglowImage" duration="1000" 
+        alphaFrom="0.3" alphaTo="1.0" 
+        blurXFrom="50.0" blurXTo="0.0" 
+        blurYFrom="50.0" blurYTo="0.0" 
+        color="0x0000FF"/>
+	<mx:Script>
+	<![CDATA[
+
+	import mx.collections.ArrayCollection;
+
+	[Bindable]
+	private var expensesAC:ArrayCollection = new ArrayCollection( [
+		{ Array: "Chemical 1", Cyp1a1: 1.59, Saa2: -4.59, Cy1a2: 9.67 },
+		{ Array: "Chemical 2", Cyp1a1: 3.98, Saa2: -2.59, Cy1a2: 9.67 },
+		{ Array: "Chemical 3", Cyp1a1: 6.2, Saa2: -4.59, Cy1a2: 9.67 },
+		{ Array: "Chemical 4", Cyp1a1: 4.56, Saa2: -4.59, Cy1a2: 9.67 },
+		{ Array: "Chemical 5", Cyp1a1: 7.8, Saa2: -4.59, Cy1a2: 9.67 } ]);
+	]]>
+	</mx:Script>
+
+	<mx:Panel id="leftpanel" title="Cluster 1" 
+		height="100%" width="50%">
+
+	<mx:LineChart id="linechart"
+		height="100%" width="100%"
+		paddingLeft="5" paddingRight="5" 
+		showDataTips="true"
+		dataProvider="{expensesAC}">
+
+		<mx:horizontalAxis>
+			<mx:CategoryAxis categoryField="Array"/>
+		</mx:horizontalAxis>
+<mx:series>
+			<mx:LineSeries yField="Cyp1a1"
+					form="curve"
+					displayName="Cyp1a1" rollOverEffect="{glowImage}" 
+            mouseUpEffect="{unglowImage}"/>
+			<mx:LineSeries yField="Saa2"
+					form="curve"
+					displayName="Saa2" mouseOver="{glowImage}" 
+            mouseUpEffect="{unglowImage}"/>
+			<mx:LineSeries yField="Cy1a2"
+					form="curve"
+					displayName="Cy1a2" mouseDownEffect="{glowImage}" 
+            mouseUpEffect="{unglowImage}"/>
+		</mx:series>
+		
+	</mx:LineChart>
+
+	<mx:Legend dataProvider="{linechart}"/>
+
+	</mx:Panel>
+<mx:Panel id="rightpanel" title="Data Panel" 
+		height="100%" width="50%">
+ </mx:Panel>
+
+</mx:Application>

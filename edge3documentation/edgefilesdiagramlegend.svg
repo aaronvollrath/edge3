@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0"
+   width="640"
+   height="480"
+   id="svg7496">
+  <defs
+     id="defs7498">
+    <linearGradient
+       id="linearGradient4134">
+      <stop
+         style="stop-color:#eedf9d;stop-opacity:1"
+         offset="0"
+         id="stop4136" />
+      <stop
+         style="stop-color:#eedf9d;stop-opacity:0.49803922"
+         offset="0.5"
+         id="stop4140" />
+      <stop
+         style="stop-color:#eedf9d;stop-opacity:0"
+         offset="1"
+         id="stop4138" />
+    </linearGradient>
+    <linearGradient
+       x1="309.61176"
+       y1="123.02184"
+       x2="387.39349"
+       y2="159.89241"
+       id="linearGradient4132"
+       xlink:href="#linearGradient4134"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-127.68295,178.62576)" />
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       width="93.43911"
+       height="19.192898"
+       x="129.90594"
+       y="281.94965"
+       style="fill:url(#linearGradient4132);fill-opacity:1;stroke:#1124f3;stroke-width:1.33000004;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3143" />
+    <g
+       transform="translate(-487.29726,-29.730694)"
+       id="g6109">
+      <rect
+         width="170.61214"
+         height="55.959824"
+         x="540.2309"
+         y="76.354111"
+         style="fill:#ffffff;fill-opacity:1;stroke:#ff08e9;stroke-width:0.92856812;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect5126" />
+      <text
+         x="546.99762"
+         y="89.181732"
+         style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         id="text6097"
+         xml:space="preserve"><tspan
+           x="546.99762"
+           y="89.181732"
+           style="font-size:10px"
+           id="tspan6099">javascript: </tspan><tspan
+           x="546.99762"
+           y="101.68173"
+           style="font-size:10px"
+           id="tspan6103">newagilentarrayformcheck.js</tspan><tspan
+           x="546.99762"
+           y="114.18173"
+           style="font-size:10px"
+           id="tspan6105">agilentexperiment-useradmin.js</tspan><tspan
+           x="546.99762"
+           y="126.68173"
+           style="font-size:10px"
+           id="tspan6107">expbuilderform.js</tspan><tspan
+           x="546.99762"
+           y="139.18173"
+           id="tspan6101" /></text>
+    </g>
+    <g
+       transform="translate(-270.61955,-34.693082)"
+       id="g3138">
+      <rect
+         width="177.81755"
+         height="24.779451"
+         x="316.41495"
+         y="159.6245"
+         style="fill:#def0e4;fill-opacity:1;stroke:#ff0000;stroke-width:0.79420888;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2160" />
+      <text
+         x="319.71326"
+         y="176.55994"
+         style="font-size:10px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         id="text3134"
+         xml:space="preserve"><tspan
+           x="319.71326"
+           y="176.55994"
+           id="tspan3136">agilentexperiment-useradmin.php</tspan></text>
+    </g>
+    <rect
+       width="149.65923"
+       height="20.865"
+       x="73.511612"
+       y="178.34877"
+       style="fill:#fdf9ff;fill-opacity:1;stroke:#21ff08;stroke-width:1.67842948;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4147" />
+    <g
+       transform="translate(-58.137547,-20.82449)"
+       id="g7355">
+      <rect
+         width="209.42206"
+         height="25.06922"
+         x="71.30806"
+         y="244.33243"
+         style="fill:#feff06;fill-opacity:1;stroke:#ff08e9;stroke-width:1.00951898;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7349" />
+      <text
+         x="78.286819"
+         y="259.89752"
+         style="font-size:10px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         id="text7351"
+         xml:space="preserve"><tspan
+           x="78.286819"
+           y="259.89752"
+           id="tspan7353">./phpinc/edge3-login-form-welcome.inc</tspan></text>
+    </g>
+    <text
+       x="210.38182"
+       y="25.46574"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text7531"
+       xml:space="preserve"><tspan
+         x="210.38182"
+         y="25.46574"
+         style="font-weight:bold"
+         id="tspan7533">Diagram Legend</tspan></text>
+    <text
+       x="246.43423"
+       y="72.014427"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text7535"
+       xml:space="preserve"><tspan
+         x="246.43423"
+         y="72.014427"
+          style="font-size:18px"
+         id="tspan7537">Associated javascript files</tspan></text>
+    <text
+       x="244.79263"
+       y="138.18658"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text7539"
+       xml:space="preserve"><tspan
+         x="244.79263"
+         y="138.18658"
+         style="font-size:18px"
+         id="tspan7541">Main page</tspan></text>
+    <text
+       x="244.79263"
+       y="192.49339"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text7543"
+       xml:space="preserve"><tspan
+         x="244.79263"
+         y="192.49339"
+         style="font-size:18px"
+         id="tspan7545">Dynamically generated files</tspan></text>
+    <text
+       x="245.37271"
+       y="238.58572"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text7547"
+       xml:space="preserve"><tspan
+         x="245.37271"
+         y="238.58572"
+         style="font-size:18px"
+         id="tspan7549">Subpages/Subsections</tspan></text>
+    <text
+       x="246.41861"
+       y="294.2616"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text7551"
+       xml:space="preserve"><tspan
+         x="246.41861"
+         y="294.2616"
+         style="font-size:18px"
+         id="tspan7553">Accessory/Utility files</tspan></text>
+    <text
+       x="78.579903"
+       y="191.04955"
+       style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text5118"
+       xml:space="preserve"><tspan
+         x="78.579903"
+         y="191.04955"
+         id="tspan5120">./IMAGES/experiments&lt;file#&gt;.json</tspan></text>
+    <text
+       x="141.41125"
+       y="293.73047"
+       style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text4122"
+       xml:space="preserve"><tspan
+         x="141.41125"
+         y="293.73047"
+         id="tspan4124">utilityfunctions.inc</tspan></text>
+  </g>
+</svg>

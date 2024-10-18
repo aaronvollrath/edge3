@@ -1,0 +1,12 @@
+== Installation/Usage
+
+Just copy windows.js in your javascript directory, and default.css + default directory in your stylesheets directory 
+See samples/index.html for more details and go on my web page :http://blogus.xilinus.com/pages/javawin
+
+== Change log
+
+- V 0.5 Initial revision
+
+== License
+
+it is licensed under the terms of the MIT License, see the included MIT-LICENSE file.

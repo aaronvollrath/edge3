@@ -1,0 +1,382 @@
+<svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 590 490" id="svgObject" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="graphic" transform="translate(0,0)"><g id="legend"  transform="translate(240,25)"><rect x="0" y="6" width="10" height="6" style="fill: rgb(224,0,0);"/><text x="15" y="11" style="stroke: black; font-size: 6pt;">>= 8</text>
+<rect x="0" y="12" width="10" height="6" style="fill: rgb(219,0,0);"/><rect x="0" y="18" width="10" height="6" style="fill: rgb(213,0,0);"/><text x="15" y="23" style="stroke: black; font-family: arial; font-size: 6pt;">6</text>
+<rect x="0" y="24" width="10" height="6" style="fill: rgb(204,0,0);"/><rect x="0" y="30" width="10" height="6" style="fill: rgb(192,0,0);"/><text x="15" y="35" style="stroke: black; font-family: arial; font-size: 6pt;">4</text>
+<rect x="0" y="36" width="10" height="6" style="fill: rgb(170,0,0);"/><rect x="0" y="42" width="10" height="6" style="fill: rgb(128,0,0);"/><text x="15" y="47" style="stroke: black; font-family: arial; font-size: 6pt;">2</text>
+<rect x="0" y="48" width="10" height="6" style="fill: rgb(0,0,0);"/><text x="-20" y="53" style="stroke: black; font-family: arial; font-size: 6pt;">Key</text>
+<rect x="0" y="54" width="10" height="6" style="fill: rgb(0,128,0);"/><text x="15" y="59" style="stroke: black; font-family: arial; font-size: 6pt;">-2</text>
+<rect x="0" y="60" width="10" height="6" style="fill: rgb(0,170,0);"/><rect x="0" y="66" width="10" height="6" style="fill: rgb(0,192,0);"/><text x="15" y="71" style="stroke: black; font-family: arial; font-size: 6pt;">-4</text>
+<rect x="0" y="72" width="10" height="6" style="fill: rgb(0,204,0);"/><rect x="0" y="78" width="10" height="6" style="fill: rgb(0,213,0);"/><text x="15" y="83" style="stroke: black; font-family: arial; font-size: 6pt;">-6</text>
+<rect x="0" y="84" width="10" height="6" style="fill: rgb(0,219,0);"/><rect x="0" y="90" width="10" height="6" style="fill: rgb(0,224,0);"/><text x="15" y="95" style="stroke: black; font-family: arial; font-size: 6pt;">&lt;= -8</text>
+<rect x="-20" y="105" width="10" height="6" style="fill: rgb(152,152,152);"/><text x="-5" y="110" style="stroke: black; font-family: arial; font-size: 6pt;"> Bad pValue</text>
+<rect x="-25" y="0" width="80" height="120" style="fill: none; stroke: red;"/></g><g id="heatmap"  cursor="crosshair" transform="translate(70,150)"><a xlink:href="./agilentfeatureinfo.php?featurenum=36488_538" target="_blank" alt=""><rect x="0" y="0" width="20" height="10" style="fill: rgb(44,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=36488_518" target="_blank" alt=""><rect x="20" y="0" width="20" height="10" style="fill: rgb(47,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=36488_519" target="_blank" alt=""><rect x="40" y="0" width="20" height="10" style="fill: rgb(26,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=36488_539" target="_blank" alt=""><rect x="60" y="0" width="20" height="10" style="fill: rgb(0,57,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=36488_533" target="_blank" alt=""><rect x="80" y="0" width="20" height="10" style="fill: rgb(0,231,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=36488_534" target="_blank" alt=""><rect x="100" y="0" width="20" height="10" style="fill: rgb(0,91,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=28351_538" target="_blank" alt=""><rect x="0" y="10" width="20" height="10" style="fill: rgb(0,192,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=28351_518" target="_blank" alt=""><rect x="20" y="10" width="20" height="10" style="fill: rgb(0,231,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=28351_519" target="_blank" alt=""><rect x="40" y="10" width="20" height="10" style="fill: rgb(0,187,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=28351_539" target="_blank" alt=""><rect x="60" y="10" width="20" height="10" style="fill: rgb(0,207,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=28351_533" target="_blank" alt=""><rect x="80" y="10" width="20" height="10" style="fill: rgb(0,252,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=28351_534" target="_blank" alt=""><rect x="100" y="10" width="20" height="10" style="fill: rgb(0,246,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=24454_538" target="_blank" alt=""><rect x="0" y="20" width="20" height="10" style="fill: rgb(0,22,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=24454_518" target="_blank" alt=""><rect x="20" y="20" width="20" height="10" style="fill: rgb(0,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=24454_519" target="_blank" alt=""><rect x="40" y="20" width="20" height="10" style="fill: rgb(0,19,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=24454_539" target="_blank" alt=""><rect x="60" y="20" width="20" height="10" style="fill: rgb(0,104,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=24454_533" target="_blank" alt=""><rect x="80" y="20" width="20" height="10" style="fill: rgb(0,236,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=24454_534" target="_blank" alt=""><rect x="100" y="20" width="20" height="10" style="fill: rgb(0,118,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=15776_538" target="_blank" alt=""><rect x="0" y="30" width="20" height="10" style="fill: rgb(0,107,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=15776_518" target="_blank" alt=""><rect x="20" y="30" width="20" height="10" style="fill: rgb(0,66,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=15776_519" target="_blank" alt=""><rect x="40" y="30" width="20" height="10" style="fill: rgb(34,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=15776_539" target="_blank" alt=""><rect x="60" y="30" width="20" height="10" style="fill: rgb(0,108,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=15776_533" target="_blank" alt=""><rect x="80" y="30" width="20" height="10" style="fill: rgb(0,229,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=15776_534" target="_blank" alt=""><rect x="100" y="30" width="20" height="10" style="fill: rgb(0,95,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=34835_538" target="_blank" alt=""><rect x="0" y="40" width="20" height="10" style="fill: rgb(0,42,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=34835_518" target="_blank" alt=""><rect x="20" y="40" width="20" height="10" style="fill: rgb(0,99,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=34835_519" target="_blank" alt=""><rect x="40" y="40" width="20" height="10" style="fill: rgb(0,52,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=34835_539" target="_blank" alt=""><rect x="60" y="40" width="20" height="10" style="fill: rgb(0,114,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=34835_533" target="_blank" alt=""><rect x="80" y="40" width="20" height="10" style="fill: rgb(0,236,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=34835_534" target="_blank" alt=""><rect x="100" y="40" width="20" height="10" style="fill: rgb(0,82,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=15275_538" target="_blank" alt=""><rect x="0" y="50" width="20" height="10" style="fill: rgb(0,237,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=15275_518" target="_blank" alt=""><rect x="20" y="50" width="20" height="10" style="fill: rgb(0,227,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=15275_519" target="_blank" alt=""><rect x="40" y="50" width="20" height="10" style="fill: rgb(0,233,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=15275_539" target="_blank" alt=""><rect x="60" y="50" width="20" height="10" style="fill: rgb(0,195,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=15275_533" target="_blank" alt=""><rect x="80" y="50" width="20" height="10" style="fill: rgb(0,248,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=15275_534" target="_blank" alt=""><rect x="100" y="50" width="20" height="10" style="fill: rgb(0,226,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=3514_538" target="_blank" alt=""><rect x="0" y="60" width="20" height="10" style="fill: rgb(0,118,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=3514_518" target="_blank" alt=""><rect x="20" y="60" width="20" height="10" style="fill: rgb(0,225,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=3514_519" target="_blank" alt=""><rect x="40" y="60" width="20" height="10" style="fill: rgb(0,210,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=3514_539" target="_blank" alt=""><rect x="60" y="60" width="20" height="10" style="fill: rgb(30,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=3514_533" target="_blank" alt=""><rect x="80" y="60" width="20" height="10" style="fill: rgb(0,236,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=3514_534" target="_blank" alt=""><rect x="100" y="60" width="20" height="10" style="fill: rgb(0,199,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=220_538" target="_blank" alt=""><rect x="0" y="70" width="20" height="10" style="fill: rgb(0,234,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=220_518" target="_blank" alt=""><rect x="20" y="70" width="20" height="10" style="fill: rgb(0,238,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=220_519" target="_blank" alt=""><rect x="40" y="70" width="20" height="10" style="fill: rgb(0,237,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=220_539" target="_blank" alt=""><rect x="60" y="70" width="20" height="10" style="fill: rgb(0,106,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=220_533" target="_blank" alt=""><rect x="80" y="70" width="20" height="10" style="fill: rgb(0,247,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=220_534" target="_blank" alt=""><rect x="100" y="70" width="20" height="10" style="fill: rgb(0,202,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=40638_538" target="_blank" alt=""><rect x="0" y="80" width="20" height="10" style="fill: rgb(0,248,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=40638_518" target="_blank" alt=""><rect x="20" y="80" width="20" height="10" style="fill: rgb(0,249,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=40638_519" target="_blank" alt=""><rect x="40" y="80" width="20" height="10" style="fill: rgb(0,250,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=40638_539" target="_blank" alt=""><rect x="60" y="80" width="20" height="10" style="fill: rgb(0,201,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=40638_533" target="_blank" alt=""><rect x="80" y="80" width="20" height="10" style="fill: rgb(0,253,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=40638_534" target="_blank" alt=""><rect x="100" y="80" width="20" height="10" style="fill: rgb(0,248,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=20284_538" target="_blank" alt=""><rect x="0" y="90" width="20" height="10" style="fill: rgb(0,191,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=20284_518" target="_blank" alt=""><rect x="20" y="90" width="20" height="10" style="fill: rgb(0,202,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=20284_519" target="_blank" alt=""><rect x="40" y="90" width="20" height="10" style="fill: rgb(0,209,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=20284_539" target="_blank" alt=""><rect x="60" y="90" width="20" height="10" style="fill: rgb(0,86,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=20284_533" target="_blank" alt=""><rect x="80" y="90" width="20" height="10" style="fill: rgb(0,217,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=20284_534" target="_blank" alt=""><rect x="100" y="90" width="20" height="10" style="fill: rgb(0,150,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=21336_538" target="_blank" alt=""><rect x="0" y="100" width="20" height="10" style="fill: rgb(0,249,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=21336_518" target="_blank" alt=""><rect x="20" y="100" width="20" height="10" style="fill: rgb(0,244,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=21336_519" target="_blank" alt=""><rect x="40" y="100" width="20" height="10" style="fill: rgb(0,246,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=21336_539" target="_blank" alt=""><rect x="60" y="100" width="20" height="10" style="fill: rgb(0,230,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=21336_533" target="_blank" alt=""><rect x="80" y="100" width="20" height="10" style="fill: rgb(0,250,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=21336_534" target="_blank" alt=""><rect x="100" y="100" width="20" height="10" style="fill: rgb(0,238,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=898_538" target="_blank" alt=""><rect x="0" y="110" width="20" height="10" style="fill: rgb(124,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=898_518" target="_blank" alt=""><rect x="20" y="110" width="20" height="10" style="fill: rgb(150,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=898_519" target="_blank" alt=""><rect x="40" y="110" width="20" height="10" style="fill: rgb(158,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=898_539" target="_blank" alt=""><rect x="60" y="110" width="20" height="10" style="fill: rgb(230,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=898_533" target="_blank" alt=""><rect x="80" y="110" width="20" height="10" style="fill: rgb(212,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=898_534" target="_blank" alt=""><rect x="100" y="110" width="20" height="10" style="fill: rgb(206,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=38709_538" target="_blank" alt=""><rect x="0" y="120" width="20" height="10" style="fill: rgb(132,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=38709_518" target="_blank" alt=""><rect x="20" y="120" width="20" height="10" style="fill: rgb(164,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=38709_519" target="_blank" alt=""><rect x="40" y="120" width="20" height="10" style="fill: rgb(176,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=38709_539" target="_blank" alt=""><rect x="60" y="120" width="20" height="10" style="fill: rgb(238,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=38709_533" target="_blank" alt=""><rect x="80" y="120" width="20" height="10" style="fill: rgb(236,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=38709_534" target="_blank" alt=""><rect x="100" y="120" width="20" height="10" style="fill: rgb(235,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=3771_538" target="_blank" alt=""><rect x="0" y="130" width="20" height="10" style="fill: rgb(34,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=3771_518" target="_blank" alt=""><rect x="20" y="130" width="20" height="10" style="fill: rgb(80,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=3771_519" target="_blank" alt=""><rect x="40" y="130" width="20" height="10" style="fill: rgb(148,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=3771_539" target="_blank" alt=""><rect x="60" y="130" width="20" height="10" style="fill: rgb(158,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=3771_533" target="_blank" alt=""><rect x="80" y="130" width="20" height="10" style="fill: rgb(240,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=3771_534" target="_blank" alt=""><rect x="100" y="130" width="20" height="10" style="fill: rgb(239,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=34474_538" target="_blank" alt=""><rect x="0" y="140" width="20" height="10" style="fill: rgb(14,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=34474_518" target="_blank" alt=""><rect x="20" y="140" width="20" height="10" style="fill: rgb(0,64,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=34474_519" target="_blank" alt=""><rect x="40" y="140" width="20" height="10" style="fill: rgb(26,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=34474_539" target="_blank" alt=""><rect x="60" y="140" width="20" height="10" style="fill: rgb(252,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=34474_533" target="_blank" alt=""><rect x="80" y="140" width="20" height="10" style="fill: rgb(253,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=34474_534" target="_blank" alt=""><rect x="100" y="140" width="20" height="10" style="fill: rgb(251,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=18993_538" target="_blank" alt=""><rect x="0" y="150" width="20" height="10" style="fill: rgb(0,204,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=18993_518" target="_blank" alt=""><rect x="20" y="150" width="20" height="10" style="fill: rgb(0,207,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=18993_519" target="_blank" alt=""><rect x="40" y="150" width="20" height="10" style="fill: rgb(0,181,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=18993_539" target="_blank" alt=""><rect x="60" y="150" width="20" height="10" style="fill: rgb(0,95,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=18993_533" target="_blank" alt=""><rect x="80" y="150" width="20" height="10" style="fill: rgb(95,0,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=18993_534" target="_blank" alt=""><rect x="100" y="150" width="20" height="10" style="fill: rgb(0,45,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=22754_538" target="_blank" alt=""><rect x="0" y="160" width="20" height="10" style="fill: rgb(0,206,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=22754_518" target="_blank" alt=""><rect x="20" y="160" width="20" height="10" style="fill: rgb(0,222,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=22754_519" target="_blank" alt=""><rect x="40" y="160" width="20" height="10" style="fill: rgb(0,194,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=22754_539" target="_blank" alt=""><rect x="60" y="160" width="20" height="10" style="fill: rgb(0,153,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=22754_533" target="_blank" alt=""><rect x="80" y="160" width="20" height="10" style="fill: rgb(0,182,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=22754_534" target="_blank" alt=""><rect x="100" y="160" width="20" height="10" style="fill: rgb(0,171,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=19157_538" target="_blank" alt=""><rect x="0" y="170" width="20" height="10" style="fill: rgb(0,251,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=19157_518" target="_blank" alt=""><rect x="20" y="170" width="20" height="10" style="fill: rgb(0,245,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=19157_519" target="_blank" alt=""><rect x="40" y="170" width="20" height="10" style="fill: rgb(0,248,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=19157_539" target="_blank" alt=""><rect x="60" y="170" width="20" height="10" style="fill: rgb(0,218,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=19157_533" target="_blank" alt=""><rect x="80" y="170" width="20" height="10" style="fill: rgb(0,249,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=19157_534" target="_blank" alt=""><rect x="100" y="170" width="20" height="10" style="fill: rgb(0,243,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=29221_538" target="_blank" alt=""><rect x="0" y="180" width="20" height="10" style="fill: rgb(0,227,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=29221_518" target="_blank" alt=""><rect x="20" y="180" width="20" height="10" style="fill: rgb(0,200,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=29221_519" target="_blank" alt=""><rect x="40" y="180" width="20" height="10" style="fill: rgb(0,210,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=29221_539" target="_blank" alt=""><rect x="60" y="180" width="20" height="10" style="fill: rgb(0,49,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=29221_533" target="_blank" alt=""><rect x="80" y="180" width="20" height="10" style="fill: rgb(0,185,0 );" />
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=29221_534" target="_blank" alt=""><rect x="100" y="180" width="20" height="10" style="fill: rgb(0,201,0 );" />
+</a></g><g id="genes" transform="translate(195,163)"><a xlink:href="./agilentfeatureinfo.php?featurenum=36488" target="_blank" alt=""><text x="0" y = "-5" style="font-family: arial; font-size:6pt;">Cyp3a44</text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=28351" target="_blank" alt=""><text x="0" y = "5" style="font-family: arial; font-size:6pt;">Cyp4a14</text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=24454" target="_blank" alt=""><text x="0" y = "15" style="font-family: arial; font-size:6pt;">Cyp3a16</text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=15776" target="_blank" alt=""><text x="0" y = "25" style="font-family: arial; font-size:6pt;">Cyp3a11</text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=34835" target="_blank" alt=""><text x="0" y = "35" style="font-family: arial; font-size:6pt;">Cyp3a41a</text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=15275" target="_blank" alt=""><text x="0" y = "45" style="font-family: arial; font-size:6pt;">Cyp2b13</text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=3514" target="_blank" alt=""><text x="0" y = "55" style="font-family: arial; font-size:6pt;">Cyp26b1</text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=220" target="_blank" alt=""><text x="0" y = "65" style="font-family: arial; font-size:6pt;">Cyp2b9</text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=40638" target="_blank" alt=""><text x="0" y = "75" style="font-family: arial; font-size:6pt;">Cyp3a44</text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=20284" target="_blank" alt=""><text x="0" y = "85" style="font-family: arial; font-size:6pt;"></text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=21336" target="_blank" alt=""><text x="0" y = "95" style="font-family: arial; font-size:6pt;">Cyp2b9</text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=898" target="_blank" alt=""><text x="0" y = "105" style="font-family: arial; font-size:6pt;">Cyp1a2</text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=38709" target="_blank" alt=""><text x="0" y = "115" style="font-family: arial; font-size:6pt;">Cyp1a2</text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=3771" target="_blank" alt=""><text x="0" y = "125" style="font-family: arial; font-size:6pt;">Cyp1b1</text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=34474" target="_blank" alt=""><text x="0" y = "135" style="font-family: arial; font-size:6pt;">Cyp1a1</text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=18993" target="_blank" alt=""><text x="0" y = "145" style="font-family: arial; font-size:6pt;">Cyp7a1</text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=22754" target="_blank" alt=""><text x="0" y = "155" style="font-family: arial; font-size:6pt;">Cyp2a4</text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=19157" target="_blank" alt=""><text x="0" y = "165" style="font-family: arial; font-size:6pt;">Cyp2b13</text>
+</a><a xlink:href="./agilentfeatureinfo.php?featurenum=29221" target="_blank" alt=""><text x="0" y = "175" style="font-family: arial; font-size:6pt;">Cyp26a1</text>
+</a></g><g id="dendrogram" transform="translate( -5,150)">
+<g id="75_5">
+<circle cx="75" cy="5" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="35_10">
+<circle cx="35" cy="10" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_15">
+<circle cx="75" cy="15" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="45_20">
+<circle cx="45" cy="20" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_25">
+<circle cx="75" cy="25" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="55_30">
+<circle cx="55" cy="30" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_35">
+<circle cx="75" cy="35" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="65_40">
+<circle cx="65" cy="40" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_45">
+<circle cx="75" cy="45" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="25_50">
+<circle cx="25" cy="50" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_55">
+<circle cx="75" cy="55" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="45_60">
+<circle cx="45" cy="60" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_65">
+<circle cx="75" cy="65" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="55_70">
+<circle cx="55" cy="70" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_75">
+<circle cx="75" cy="75" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="65_80">
+<circle cx="65" cy="80" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_85">
+<circle cx="75" cy="85" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="35_90">
+<circle cx="35" cy="90" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_95">
+<circle cx="75" cy="95" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="65_100">
+<circle cx="65" cy="100" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_105">
+<circle cx="75" cy="105" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="15_110">
+<circle cx="15" cy="110" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_115">
+<circle cx="75" cy="115" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="65_120">
+<circle cx="65" cy="120" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_125">
+<circle cx="75" cy="125" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="55_130">
+<circle cx="55" cy="130" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_135">
+<circle cx="75" cy="135" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="65_140">
+<circle cx="65" cy="140" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_145">
+<circle cx="75" cy="145" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="45_150">
+<circle cx="45" cy="150" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_155">
+<circle cx="75" cy="155" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="65_160">
+<circle cx="65" cy="160" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_165">
+<circle cx="75" cy="165" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="55_170">
+<circle cx="55" cy="170" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_175">
+<circle cx="75" cy="175" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="65_180">
+<circle cx="65" cy="180" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<g id="75_185">
+<circle cx="75" cy="185" r="2.5" style="stroke: black; fill: blue;"/>
+</g>
+<line x1="75" y1="5" x2="35" y2="5" style="stroke-width: 1; stroke: black;"/>
+<line x1="35" y1="5" x2="35" y2="10" style="stroke-width: 1; stroke: black;"/>
+<line x1="35" y1="10" x2="25" y2="10" style="stroke-width: 1; stroke: black;"/>
+<line x1="25" y1="10" x2="25" y2="50" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="15" x2="45" y2="15" style="stroke-width: 1; stroke: black;"/>
+<line x1="45" y1="15" x2="45" y2="20" style="stroke-width: 1; stroke: black;"/>
+<line x1="45" y1="20" x2="35" y2="20" style="stroke-width: 1; stroke: black;"/>
+<line x1="35" y1="20" x2="35" y2="10" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="25" x2="55" y2="25" style="stroke-width: 1; stroke: black;"/>
+<line x1="55" y1="25" x2="55" y2="30" style="stroke-width: 1; stroke: black;"/>
+<line x1="55" y1="30" x2="45" y2="30" style="stroke-width: 1; stroke: black;"/>
+<line x1="45" y1="30" x2="45" y2="20" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="35" x2="65" y2="35" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="35" x2="65" y2="40" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="40" x2="55" y2="40" style="stroke-width: 1; stroke: black;"/>
+<line x1="55" y1="40" x2="55" y2="30" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="45" x2="65" y2="45" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="45" x2="65" y2="40" style="stroke-width: 1; stroke: black;"/>
+<line x1="25" y1="50" x2="15" y2="50" style="stroke-width: 1; stroke: black;"/>
+<line x1="15" y1="50" x2="15" y2="110" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="55" x2="45" y2="55" style="stroke-width: 1; stroke: black;"/>
+<line x1="45" y1="55" x2="45" y2="60" style="stroke-width: 1; stroke: black;"/>
+<line x1="45" y1="60" x2="35" y2="60" style="stroke-width: 1; stroke: black;"/>
+<line x1="35" y1="60" x2="35" y2="90" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="65" x2="55" y2="65" style="stroke-width: 1; stroke: black;"/>
+<line x1="55" y1="65" x2="55" y2="70" style="stroke-width: 1; stroke: black;"/>
+<line x1="55" y1="70" x2="45" y2="70" style="stroke-width: 1; stroke: black;"/>
+<line x1="45" y1="70" x2="45" y2="60" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="75" x2="65" y2="75" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="75" x2="65" y2="80" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="80" x2="55" y2="80" style="stroke-width: 1; stroke: black;"/>
+<line x1="55" y1="80" x2="55" y2="70" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="85" x2="65" y2="85" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="85" x2="65" y2="80" style="stroke-width: 1; stroke: black;"/>
+<line x1="35" y1="90" x2="25" y2="90" style="stroke-width: 1; stroke: black;"/>
+<line x1="25" y1="90" x2="25" y2="50" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="95" x2="65" y2="95" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="95" x2="65" y2="100" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="100" x2="35" y2="100" style="stroke-width: 1; stroke: black;"/>
+<line x1="35" y1="100" x2="35" y2="90" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="105" x2="65" y2="105" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="105" x2="65" y2="100" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="115" x2="65" y2="115" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="115" x2="65" y2="120" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="120" x2="55" y2="120" style="stroke-width: 1; stroke: black;"/>
+<line x1="55" y1="120" x2="55" y2="130" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="125" x2="65" y2="125" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="125" x2="65" y2="120" style="stroke-width: 1; stroke: black;"/>
+<line x1="55" y1="130" x2="45" y2="130" style="stroke-width: 1; stroke: black;"/>
+<line x1="45" y1="130" x2="45" y2="150" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="135" x2="65" y2="135" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="135" x2="65" y2="140" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="140" x2="55" y2="140" style="stroke-width: 1; stroke: black;"/>
+<line x1="55" y1="140" x2="55" y2="130" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="145" x2="65" y2="145" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="145" x2="65" y2="140" style="stroke-width: 1; stroke: black;"/>
+<line x1="45" y1="150" x2="15" y2="150" style="stroke-width: 1; stroke: black;"/>
+<line x1="15" y1="150" x2="15" y2="110" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="155" x2="65" y2="155" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="155" x2="65" y2="160" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="160" x2="55" y2="160" style="stroke-width: 1; stroke: black;"/>
+<line x1="55" y1="160" x2="55" y2="170" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="165" x2="65" y2="165" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="165" x2="65" y2="160" style="stroke-width: 1; stroke: black;"/>
+<line x1="55" y1="170" x2="45" y2="170" style="stroke-width: 1; stroke: black;"/>
+<line x1="45" y1="170" x2="45" y2="150" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="175" x2="65" y2="175" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="175" x2="65" y2="180" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="180" x2="55" y2="180" style="stroke-width: 1; stroke: black;"/>
+<line x1="55" y1="180" x2="55" y2="170" style="stroke-width: 1; stroke: black;"/>
+<line x1="75" y1="185" x2="65" y2="185" style="stroke-width: 1; stroke: black;"/>
+<line x1="65" y1="185" x2="65" y2="180" style="stroke-width: 1; stroke: black;"/>
+</g><g id="chemdendrogram" transform="scale(1, -1) translate(70,-490)">
+<g id="10_150">
+<circle cx="10" cy="150" r="2.5" style="stroke: blue; fill: blue;"/>
+</g>
+<g id="20_25">
+<circle cx="20" cy="25" r="2.5" style="stroke: blue; fill: blue;"/>
+</g>
+<g id="30_150">
+<circle cx="30" cy="150" r="2.5" style="stroke: blue; fill: blue;"/>
+</g>
+<g id="40_35">
+<circle cx="40" cy="35" r="2.5" style="stroke: blue; fill: blue;"/>
+</g>
+<g id="50_150">
+<circle cx="50" cy="150" r="2.5" style="stroke: blue; fill: blue;"/>
+</g>
+<g id="60_15">
+<circle cx="60" cy="15" r="2.5" style="stroke: blue; fill: blue;"/>
+</g>
+<g id="70_150">
+<circle cx="70" cy="150" r="2.5" style="stroke: blue; fill: blue;"/>
+</g>
+<g id="80_25">
+<circle cx="80" cy="25" r="2.5" style="stroke: blue; fill: blue;"/>
+</g>
+<g id="90_150">
+<circle cx="90" cy="150" r="2.5" style="stroke: blue; fill: blue;"/>
+</g>
+<g id="100_35">
+<circle cx="100" cy="35" r="2.5" style="stroke: blue; fill: blue;"/>
+</g>
+<g id="110_150">
+<circle cx="110" cy="150" r="2.5" style="stroke: blue; fill: blue;"/>
+</g>
+<line x1="10" y1="25" x2="20" y2="25" style="stroke-width: 1; stroke: black;"/>
+<line x1="10" y1="25" x2="10" y2="150" style="stroke-width: 1; stroke: gray;"/>
+<line x1="20" y1="15" x2="60" y2="15" style="stroke-width: 1; stroke: black;"/>
+<line x1="20" y1="15" x2="20" y2="25" style="stroke-width: 1; stroke: gray;"/>
+<line x1="30" y1="35" x2="40" y2="35" style="stroke-width: 1; stroke: black;"/>
+<line x1="30" y1="35" x2="30" y2="150" style="stroke-width: 1; stroke: gray;"/>
+<line x1="40" y1="25" x2="20" y2="25" style="stroke-width: 1; stroke: black;"/>
+<line x1="40" y1="25" x2="40" y2="35" style="stroke-width: 1; stroke: gray;"/>
+<line x1="50" y1="35" x2="40" y2="35" style="stroke-width: 1; stroke: black;"/>
+<line x1="50" y1="35" x2="50" y2="150" style="stroke-width: 1; stroke: gray;"/>
+<line x1="70" y1="25" x2="80" y2="25" style="stroke-width: 1; stroke: black;"/>
+<line x1="70" y1="25" x2="70" y2="150" style="stroke-width: 1; stroke: gray;"/>
+<line x1="80" y1="15" x2="60" y2="15" style="stroke-width: 1; stroke: black;"/>
+<line x1="80" y1="15" x2="80" y2="25" style="stroke-width: 1; stroke: gray;"/>
+<line x1="90" y1="35" x2="100" y2="35" style="stroke-width: 1; stroke: black;"/>
+<line x1="90" y1="35" x2="90" y2="150" style="stroke-width: 1; stroke: gray;"/>
+<line x1="100" y1="25" x2="80" y2="25" style="stroke-width: 1; stroke: black;"/>
+<line x1="100" y1="25" x2="100" y2="35" style="stroke-width: 1; stroke: gray;"/>
+<line x1="110" y1="35" x2="100" y2="35" style="stroke-width: 1; stroke: black;"/>
+<line x1="110" y1="35" x2="110" y2="150" style="stroke-width: 1; stroke: gray;"/>
+</g><g id="treatments" transform="translate(70,145)" ><a xlink:href="http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=538" target="_blank" alt=""><text x="15" y="0" transform="rotate(270, 15,0)" style="font-size:8pt; font-weight:bold;" onclick="t(538,-3,3)">TE A2 Corn Oil 10 ml/kg 48hrs</text></a><a xlink:href="http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=518" target="_blank" alt=""><text x="35" y="0" transform="rotate(270, 35,0)" style="font-size:8pt; font-weight:bold;" onclick="t(518,-3,3)">TE A1 Corn Oil 10 ml/kg 48hrs</text></a><a xlink:href="http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=519" target="_blank" alt=""><text x="55" y="0" transform="rotate(270, 55,0)" style="font-size:8pt; font-weight:bold;" onclick="t(519,-3,3)">TE A3 Corn Oil 10ml/kg 48hrs</text></a><a xlink:href="http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=539" target="_blank" alt=""><text x="75" y="0" transform="rotate(270, 75,0)" style="font-size:8pt; font-weight:bold;" onclick="t(539,-3,3)">TE B3 TCDD 10ug/kg 48hrs</text></a><a xlink:href="http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=533" target="_blank" alt=""><text x="95" y="0" transform="rotate(270, 95,0)" style="font-size:8pt; font-weight:bold;" onclick="t(533,-3,3)">TE B1 TCDD 10ug/kg 48hrs</text></a><a xlink:href="http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=534" target="_blank" alt=""><text x="115" y="0" transform="rotate(270, 115,0)" style="font-size:8pt; font-weight:bold;" onclick="t(534,-3,3)">TE B2 TCDD 10ug/kg 48hrs</text></a></g></g></svg>
