@@ -605,11 +605,11 @@ if($logged_in == 0){
 <?php
 
 					if(isset($_GET['pass']) || isset($_GET['username']) || isset($_GET['userandpass'])){
-						require('./phpinc/emailpassusername.inc.php');
+						require('emailpassusername.inc.php');
 					}elseif(isset($_GET['profile'])){
-						require('./phpinc/updateaccount.inc.php');
+						require('updateaccount.inc.php');
 					}else{
-						require('./phpinc/edge3-login-form-welcome.inc');
+						require('edge3-login-form-welcome.inc');
 					}
 					?>
 

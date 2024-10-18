@@ -1,2 +1,0 @@
-./agilentarrayinfo.php?arrayid=
-../agilentfeatureinfo.php?featurenum=

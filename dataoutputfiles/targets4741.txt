@@ -1,7 +1,0 @@
-SlideNumber	Labels	FileName	Cy3	Cy5
-518	TE A1 Corn Oil 10 ml/kg 48hrs	c:/xampp/htdocs/edge3/edgedata/US22502567_251486817746/US22502567_251486817746_S01_GE2-v5_91_0806_1_1.txt	sample1	sample1
-519	TE A3 Corn Oil 10ml/kg 48hrs	c:/xampp/htdocs/edge3/edgedata/US22502567_251486817746/US22502567_251486817746_S01_GE2-v5_91_0806_1_2.txt	sample1	sample1
-533	TE B1 TCDD 10ug/kg 48hrs	c:/xampp/htdocs/edge3/edgedata/US22502567_251486817747/US22502567_251486817747_S01_GE2-v5_91_0806_1_4.txt	sample2	sample1
-534	TE B2 TCDD 10ug/kg 48hrs	c:/xampp/htdocs/edge3/edgedata/US22502567_251486817748/US22502567_251486817748_S01_GE2-v5_91_0806_1_1.txt	sample2	sample1
-538	TE A2 Corn Oil 10 ml/kg 48hrs    	c:/xampp/htdocs/edge3/edgedata/US22502567_251486817749/US22502567_251486817749_S01_GE2-v5_91_0806_1_1.txt	sample1	sample1
-539	TE B3 TCDD 10ug/kg 48hrs	c:/xampp/htdocs/edge3/edgedata/US22502567_251486817749/US22502567_251486817749_S01_GE2-v5_91_0806_1_2.txt	sample2	sample1
