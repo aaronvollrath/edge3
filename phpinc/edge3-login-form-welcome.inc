@@ -66,7 +66,7 @@ Password:
 	-->
 
 	<?php
-	}else //if($_SERVER['PHP_SELF'] == $relativePath."edge3.php"){
+	}else{ //if($_SERVER['PHP_SELF'] == $relativePath."edge3.php"){
 	?>
 
 	<br><br><br>
