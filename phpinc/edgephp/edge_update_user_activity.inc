@@ -1,6 +1,6 @@
 <?php
 
-if($_SESSION['userid']){
+if(isset($_SESSION['userid'])){
 
 	if(getenv("HTTP_CLIENT_IP")) {
 		$ip = getenv("HTTP_CLIENT_IP");
