@@ -22,7 +22,7 @@ Password:
 
 <?php
 }else{
-//analyze($_SERVER);
+analyze($_SERVER);
 	if($_SERVER['PHP_SELF'] == $relativePath."agilentexperiment-useradmin.php"){
 	?>
 
