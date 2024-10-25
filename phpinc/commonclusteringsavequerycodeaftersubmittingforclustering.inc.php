@@ -18,9 +18,13 @@ if ($userid == $debugid && $debug == 1) {
     analyze($_POST);
 	echo 'in commonclusteringsavequerycodeaftersubmittingforclustering.inc.php<hr>';
 }
+$nborderedsubmit = false;
+if(isset($_POST['nborderedsubmit'])){
+    $nborderedsubmit = $_POST['nborderedsubmit'];
+}
 
 // Handle ordered submission
-if ($orderedSubmit === "true" || $_POST['nborderedsubmit']== "true") {
+if ($orderedSubmit === "true" || $nborderedsubmit == "true") {
 
     if (isset($_GET['savedquery'])) {
         // Debugging information

@@ -1695,7 +1695,7 @@ function rBasedDifferentialExpression2($filenamebase, $idArray, $RbasedCorrectio
 
 
 function createclusteringheatmap($filenamebase, $logfilename,$featureCount,$arrayCount,$sep){
-	echo "in createclusteringheatmap with R<br>";
+	#echo "in createclusteringheatmap with R<br>";
 
 	$height=$featureCount*10; 
 	$width=$arrayCount*180;
@@ -1767,7 +1767,7 @@ function createclusteringheatmap($filenamebase, $logfilename,$featureCount,$arra
 	}
 	fwrite($fd4, $line);
 	fwrite($fd4, "dev.off()\n");
-	$line = "devSVG(file=\"".$filenamebase."clusteringdev.svg\",bg=\"white\")\n";
+	$line = "svg(file=\"".$filenamebase."clusteringdev.svg\",bg=\"white\")\n";
 	fwrite($fd4, $line);
 	if($colsep == ""){
 		$line = "heatmap.2(x=exprsData, Rowv=as.dendrogram(clust.genes),Colv=as.dendrogram(clust.arrays), col=heatcol, margins=c(20,20),cexCol=.5,cexRow=.5)\n";
