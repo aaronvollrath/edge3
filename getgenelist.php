@@ -33,7 +33,7 @@ if($got != true){
 */
 }
 else{
-	$sql = "SELECT featurenums FROM genelist WHERE name = '$name' && userid = '$userid'"
+	$sql = "SELECT featurenums FROM genelist WHERE name = '$name' && userid = '$userid'";
 	$result = mysql_query($sql,$db);
 	$featurenums = mysql_result($result, 0);
 	echo $featurenums;
