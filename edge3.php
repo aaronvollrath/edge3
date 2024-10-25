@@ -1,10 +1,10 @@
 <?php
-/*test*/
+
 session_start();
 require 'globalvariables.inc.php';
 require 'globalfilelocations.inc';
 
-include 'utilityfunctions.inc'; # general utility functions file used throughout
+require 'utilityfunctions.inc'; # general utility functions file used throughout
 require 'edge_db_connect2.php';
 
 //die('after db connection script');
@@ -20,17 +20,7 @@ if(isset($_SESSION['userid'])){
 }
 //echo '<br>after checking to see if session variable userid is set.<br>';
 include 'edge_update_user_activity.inc';
-//die('after edge_update_user_activity.inc');
-#require("fileupload-class.php");
-/*
-$db = mysql_connect("localhost", "root", "arod678cbc3");
-$db2 = mysql_connect("localhost", "root", "arod678cbc3",TRUE);
-mysql_select_db("edge", $db);
-mysql_select_db("mygo", $db2);
-*/
-// Need to check if the user is logged in because this is a restricted area...
-// Need to check if the user is logged in because this is a restricted area...
-/*echo "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>";*/
+
  function utime (){
 $time = explode( " ", microtime());
 $usec = (double)$time[0];
@@ -53,13 +43,8 @@ $start = utime();
 <title>EDGE^3</title>
 <?php
 
-
-//include 'header.inc';
-#require "formcheck2.inc"; # a number of javascript functions used throughout...superceded by /var/www/javascript/formcheck2.js
-
 include 'outputimage.inc'; # used for creating an raster image from svg file
 
-//analyze($_SERVER);
 include 'selectclusteringorderingmethod.inc.php';  # located in ./phpinc, checks posted values and also selects what algorithm is used.
 $arraytypestring = "agilent";
 $arrayclusteringtype = 1;
@@ -144,148 +129,146 @@ $logged_in = 0;
         dojo.require("dijit.layout.AccordionContainer");
         dojo.require("dijit.layout.TabContainer");
         dojo.require("dijit.layout.ContentPane");
-	dojo.require("dijit.form.Button");
-	dojo.require("dijit.Toolbar");
-	dojo.require("dijit.Menu");
-	dojo.require("dijit.Tooltip");
-	dojo.require("dijit.Dialog");
-	dojo.require("dijit.form.ComboBox");
-	dojo.require("dijit.form.CheckBox");
-	//dojo.require("dijit.form.FilteringSelect");
-	dojo.require("dijit.form.Textarea");
-	//dojo.require("dijit.form.SimpleTextarea");
-	//dojo.require("dijit.Tree");
-	dojo.require("dijit.TitlePane");
-       dojo.require("dijit.form.TextBox");
-        //dojo.require("dijit.Editor");
+		dojo.require("dijit.form.Button");
+		dojo.require("dijit.Toolbar");
+		dojo.require("dijit.Menu");
+		dojo.require("dijit.Tooltip");
+		dojo.require("dijit.Dialog");
+		dojo.require("dijit.form.ComboBox");
+		dojo.require("dijit.form.CheckBox");
+		dojo.require("dijit.form.Textarea");
+		dojo.require("dijit.TitlePane");
+		dojo.require("dijit.form.TextBox");
 
-dojo.require("dijit.InlineEditBox");
-dojo.addOnLoad(
+		dojo.require("dijit.InlineEditBox");
 
-function(){
+		dojo.addOnLoad(
 
-//dojo.byId('loaderInner').innerHTML += " done.";
-			//setTimeout("hideLoader()",250);
+			function(){
 
-});
-function hideLoader(){
-			var loader = dojo.byId('loader');
-			dojo.fadeOut({ node: loader, duration:500,
-				onEnd: function(){
-					loader.style.display = "none";
-				}
-			}).play();
-}
+			//dojo.byId('loaderInner').innerHTML += " done.";
+						//setTimeout("hideLoader()",250);
 
-function queryTempLoad(userid){
-	dijit.byId('queryDialog').setHref("./phpinc/unsavedqueryscript.php?userid="+userid);
-dijit.byId('queryDialog').show();
+			});
 
-}
-
-function querySavedLoad(userid){
-	dijit.byId('queryDialog').setHref("./phpinc/savedqueryscript.php?userid="+userid);
-dijit.byId('queryDialog').show();
-
-}
-
-
-
-function queryGenesByUserid(userid){
-	dijit.byId('queryDialog').setHref("./genelistloader.php?userid="+userid);
-dijit.byId('queryDialog').show();
-
-}
-
-function queryGenesByPublic(userid){
-	dijit.byId('queryDialog').setHref("./genelistloader.php");
-dijit.byId('queryDialog').show();
-
-}
-
-function fakequerySave(){
-	dijit.byId('queryDialog').setHref("./savequery.php?tempquery=1");
-dijit.byId('queryDialog').show();
-
-}
-
-function displayClusteringModule(){
-	// Need to display the tab for clustering....
-	if(dijit.byId('clustering').checked == true){
-		document.load("edge3.php");
-	}else{
-		dijit.byId('mainTabContainer').removeChild("clusteringmodule");
-
-	}
-}
-
-function updatefeaturenums() { // 
-
-/*
-need to check to make sure that a button has been pressed.....
-*/
-var genelistboxChecked = false;
-
-var dml = document.forms['getgenes'];
-var query = document.forms['query'];
-   len = dml.elements.length;
-var errormessage = "";
-var genelistschecked = "";
-   for (var i=0, j=len; i<j; i++) {
-       myType = dml.elements[i].type;
-       myName = dml.elements[i].name;
-
-       if (myType == 'checkbox') {
-       	  if(dml.elements[i].checked){
-		if(genelistboxChecked != true){
-			// FIRST LIST TO ADD...
-			genelistschecked += dml.elements[i].value;
-		}else{
-			genelistschecked += "," + dml.elements[i].value;
+		function hideLoader(){
+					var loader = dojo.byId('loader');
+					dojo.fadeOut({ node: loader, duration:500,
+						onEnd: function(){
+							loader.style.display = "none";
+						}
+					}).play();
 		}
-            genelistboxChecked = true;
-	    
-	  }
-       }
-   }
-	
-	if (!genelistboxChecked){
-	alert('Please select at least 1 gene list.');
-	return false;
-	}else{
-		dojo.xhrGet( { // �
-					// The following URL must match that used to test the server.
-        url: "./phpinc/generatelist.inc.php?lists=" + genelistschecked,
-        handleAs: "text",
 
-        timeout: 5000, // Time in milliseconds
+		function queryTempLoad(userid){
+			dijit.byId('queryDialog').setHref("./phpinc/unsavedqueryscript.php?userid="+userid);
+		dijit.byId('queryDialog').show();
 
-        // The LOAD function will be called on a successful response.
-        load: function(response, ioArgs) { // �
-		//dml.getElementById("cloneList").setValue("")
-		//query.getElementById("cloneList").setValue(response);
-        	dijit.byId("cloneList").setValue(response); // �
-          return response; // �
-        },
+		}
 
-        // The ERROR function will be called in an error case.
-        error: function(response, ioArgs) { // �
-          console.error("HTTP status code: ", ioArgs.xhr.status); // �
-	  errormessage = "HTTP status code: " + ioArgs.xhr.status;
-	  alert("error: " + errormessage);
-          return response; // �
-          }
-        });
+		function querySavedLoad(userid){
+			dijit.byId('queryDialog').setHref("./phpinc/savedqueryscript.php?userid="+userid);
+		dijit.byId('queryDialog').show();
 
-	}
-	
-alert("gene list(s) loaded.  close selection window to continue...");
+		}
 
-return true;
 
-}
 
-function concatenateandsavelists() { // �?
+		function queryGenesByUserid(userid){
+			dijit.byId('queryDialog').setHref("./genelistloader.php?userid="+userid);
+		dijit.byId('queryDialog').show();
+
+		}
+
+		function queryGenesByPublic(userid){
+			dijit.byId('queryDialog').setHref("./genelistloader.php");
+		dijit.byId('queryDialog').show();
+
+		}
+
+		function fakequerySave(){
+			dijit.byId('queryDialog').setHref("./savequery.php?tempquery=1");
+		dijit.byId('queryDialog').show();
+
+		}
+
+		function displayClusteringModule(){
+			// Need to display the tab for clustering....
+			if(dijit.byId('clustering').checked == true){
+				document.load("edge3.php");
+			}else{
+				dijit.byId('mainTabContainer').removeChild("clusteringmodule");
+
+			}
+		}
+
+		function updatefeaturenums() { // 
+
+		/*
+		need to check to make sure that a button has been pressed.....
+		*/
+		var genelistboxChecked = false;
+
+		var dml = document.forms['getgenes'];
+		var query = document.forms['query'];
+		len = dml.elements.length;
+		var errormessage = "";
+		var genelistschecked = "";
+		for (var i=0, j=len; i<j; i++) {
+			myType = dml.elements[i].type;
+			myName = dml.elements[i].name;
+
+			if (myType == 'checkbox') {
+				if(dml.elements[i].checked){
+				if(genelistboxChecked != true){
+					// FIRST LIST TO ADD...
+					genelistschecked += dml.elements[i].value;
+				}else{
+					genelistschecked += "," + dml.elements[i].value;
+				}
+					genelistboxChecked = true;
+				
+			}
+			}
+		}
+			
+			if (!genelistboxChecked){
+			alert('Please select at least 1 gene list.');
+			return false;
+			}else{
+				dojo.xhrGet( { // �
+							// The following URL must match that used to test the server.
+				url: "./phpinc/generatelist.inc.php?lists=" + genelistschecked,
+				handleAs: "text",
+
+				timeout: 5000, // Time in milliseconds
+
+				// The LOAD function will be called on a successful response.
+				load: function(response, ioArgs) { // �
+				//dml.getElementById("cloneList").setValue("")
+				//query.getElementById("cloneList").setValue(response);
+					dijit.byId("cloneList").setValue(response); // �
+				return response; // �
+				},
+
+				// The ERROR function will be called in an error case.
+				error: function(response, ioArgs) { // �
+				console.error("HTTP status code: ", ioArgs.xhr.status); // �
+			errormessage = "HTTP status code: " + ioArgs.xhr.status;
+			alert("error: " + errormessage);
+				return response; // �
+				}
+				});
+
+			}
+			
+		alert("gene list(s) loaded.  close selection window to continue...");
+
+		return true;
+
+		}
+
+function concatenateandsavelists() { 
 
 /*
 need to check to make sure that a button has been pressed.....

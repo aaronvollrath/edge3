@@ -1,12 +1,11 @@
 <div dojoType="dijit.layout.ContentPane" style="height: 1800px;">
 
 <?php
-
 $userid = $_SESSION['userid'];
 if($userid == ""){
 	$userid = $_SESSION['userid'];
 }
-$debug = -1;  // set to 1 for debug messages as long as the userid matches debugid....
+$debug = 1;  // set to 1 for debug messages as long as the userid matches debugid....
 $debugid = 1;
 if($userid == $debugid && $debug == 1){
 echo "debug mode: <br>";
@@ -34,33 +33,6 @@ if (isset($_POST['submit']) && $orderingMethod == 0 || $orderedSubmit == "true")
 			
 		
 		require('./phpinc/commonclusteringsavequerycodeaftersubmittingforclustering.inc.php');
-
-		#require('./phpinc/commonfilecreationcode.inc.php');
-		
-		# we need to check to see if there has been a targets file submitted....
-		/*analyze($_FILES);
-		if($_FILES['file']['name']!=""){
-			#echo "file entered need to upload...<br>";
-			$my_uploader = new uploader('en'); // errors in English
-		
-			$my_uploader->max_filesize(90000000);
-			//$my_uploader->max_image_size(800, 800);
-			$my_uploader->upload('file', '', '.txt');
-			$my_uploader->save_file($IMAGESdir, 2);
-	
-			if ($my_uploader->error) {
-				$fileError = 1;
-				$fileErrorText = $my_uploader->error;
-				print($my_uploader->error . "<br><br>\n");
-				die("ERROR UPLOADING FILE!");
-			}else{
-						print("Thanks for uploading " . $my_uploader->file['name'] . "<br><br>\n");
-				$inputfilename = $my_uploader->file['name'];
-				$targetsfile = $IMAGESdir."/".$inputfilename;
-			}
-		}else{
-		
-		*/
 			
 			# need to create the targets file....
 			$targetsFile = "$IMAGESdir/targets$filenum.txt";
@@ -75,17 +47,12 @@ if (isset($_POST['submit']) && $orderingMethod == 0 || $orderedSubmit == "true")
 			$groupdesignationarray = array();
 			$trxCounter = 0;
 			$numberOfArrays = $_POST['numberOfArrays'];
-			#analyze($_POST);
-			#echo "The number of arrays is $numberOfArrays<br>";
-			#echo "<HR>";
+
 			
 			
 			$cy3array = $_POST['optioncy3'];
 			$cy5array = $_POST['optioncy5'];
-			#print_r($cy3array);
-			#echo "<br>";
-			#echo $cy5array;
-			#echo "<HR>";
+
 			$arraynamearray = array();
 			foreach($cy3array as $key=>$value){
 				// Get the info for each array....
@@ -98,8 +65,7 @@ if (isset($_POST['submit']) && $orderingMethod == 0 || $orderedSubmit == "true")
 				$sql = "SELECT FE_data_file FROM agilent_arrayinfo WHERE arrayid = $key"; 
 				$result = $db->Execute($sql);
 				$arrayfile = $result->FetchRow();
-				//echo $sql;
-				#$arrayfile = returndatafile($arrayfile[0],$datafilelocation,$edgedata,true,1);
+				
 				$arrayfile = returndatafile($arrayfile[0],$datafilelocation,$edgedata,0,1);
 				if($arrayfile == ""){
 					die("The Feature Extraction file for array, $name, is not present.  Please contact the EDGE administrator.<br>");	
@@ -116,8 +82,6 @@ if (isset($_POST['submit']) && $orderingMethod == 0 || $orderedSubmit == "true")
 				
 			}
 
-
-		//}
 		
 		$key = $_POST['trxidorder1']; # this will grab the first arrayid from the list.
 		# get the arraytype (organism) associated w/ these arrays...
@@ -154,8 +118,7 @@ if (isset($_POST['submit']) && $orderingMethod == 0 || $orderedSubmit == "true")
 		}else{
 			die("correction value is not set!");
 		}
-		#echo "correction used: $RbasedCorrection<br>";
-		#analyze($_POST);
+
 		if(isset($_POST['customlimma'])){
 			$customlimma = $_POST['customlimma'];
 			$slashesarray = array("\\", "/");
@@ -172,7 +135,6 @@ if (isset($_POST['submit']) && $orderingMethod == 0 || $orderedSubmit == "true")
 			$reference = "";
 		
 		}
-			#analyze($_POST);
 			# we need to get the comparisons(contrasts)
 			$contrasts = $_POST['comparison'];
 			$makeContrastsList = "";
@@ -202,7 +164,6 @@ if (isset($_POST['submit']) && $orderingMethod == 0 || $orderedSubmit == "true")
 					$str = ",$str";
 				}
 				if($avalue == $bvalue){	
-					#echo "stopped at $i<br>";
 					break;
 				}else{
 					$makeContrastsList .= $str;
@@ -214,9 +175,6 @@ if (isset($_POST['submit']) && $orderingMethod == 0 || $orderedSubmit == "true")
 				$contrastcount++;
 			}
 		
-		
-		#echo "<br>The number of contrasts is: $contrastcount<br>";
-		#echo "reference is $reference[0]<br>";
 ?>
 		<table class="question">
 			<thead>
@@ -241,11 +199,9 @@ if (isset($_POST['submit']) && $orderingMethod == 0 || $orderedSubmit == "true")
 			<?php if($savedquery != ""){
 				// Does this query have a name???
 				$sql = "SELECT queryname FROM savedqueries WHERE query = $savedquery";
-				echo $sql;
 				$sqlResult = $db->Execute($sql);
 				$row = $sqlResult->FetchRow();
 				$name = $row[0];
-				//echo "<br>name=$name<br>";
 				$update = "true";
 				if($name == "" || $name == "NULL"){
 					$update = "false";
@@ -289,11 +245,10 @@ if (isset($_POST['submit']) && $orderingMethod == 0 || $orderedSubmit == "true")
 			</tr>
 			</table>
 <?php
-		#echo "$customlimma";
-		#die("exiting");
+
 		# the function below is located in utilityfunctions.inc.
 		$rfile = rBasedDifferentialExpression2($filenum, $idArray, $RbasedCorrection,$db,$pvalue,$datafilelocation,$edgedata,$IMAGESdir, $IMAGESreldir,$RPath,$reference,$makeContrastsList,$contrastcount,$comparisonnames,$organismtype,$customlimma);
-		//echo '<br>here is the generated R file: '.$rfile."<br>";
+		echo '<br>here is the generated R file: '.$rfile."<br>";
 		include($rfile);
 
 	$end = utime(); $run = $end - $start;
@@ -321,8 +276,6 @@ else{
 	$priv = $privval;
 }
 
-
-//analyze($_SESSION);
 	require('./phpinc/commonclusteringsavequerycode.inc');
 
 
