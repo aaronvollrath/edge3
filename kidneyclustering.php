@@ -864,11 +864,7 @@ if (isset($_POST['submit']) && $orderingMethod == 0 || $orderedSubmit == "true")
 
 				$w = $arrayidCount *20 + 500;
 				$h = $cloneCount * 10 + 200;
-				if($outputformat == 0){
-				echo "<p>Can't see the heat map?  Click the image to download the SVG viewer.
-				<A HREF=\"http://www.adobe.com/svg/viewer/install/main.html\" target=\"_blank\"><IMG SRC=\"./GIFs/svgdownload.gif\" BORDER=\"0\" HEIGHT=\"25\" WIDTH=\"70\"></A>
-				</p>";
-				}
+
 				?>
 				<?php
 				// If there's only one treatment, don't cluster by treatments!!!!!
