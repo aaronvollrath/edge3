@@ -90,7 +90,7 @@ if ($orderedSubmit === "true" || $nborderedsubmit == "true") {
 
     // Handle non-ordered submission
     $query1text = '';
-    analyze($_POST);
+    //analyze($_POST);
     // Iterate through POST data
     foreach ($_POST as $key => $val) {
         if ($key !== "submit") {

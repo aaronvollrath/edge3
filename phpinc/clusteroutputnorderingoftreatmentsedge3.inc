@@ -34,7 +34,7 @@ echo "<br>$countSQL<br>";
 // Determine what arrays were selected....
 //echo "csv file : $csvfd<br>";
 $userid = $_SESSION['userid'];
-	$arrayurl = "http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=\n";
+	$arrayurl = "./agilentarrayinfo.php?arrayid=\n";
 	for($i = 1; $i <= $maxarrayID;$i++){
 		$postval = "array$i";
 		$val=$_POST[$postval];

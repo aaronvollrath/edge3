@@ -4,6 +4,7 @@
 		**********************************************************************************/
 	$debug = -1;
 		if($debug ==1){
+			echo "in debug mode<br>";
 	analyze($_POST);
 		//echo "organism array check = $trxidorder0<br>";
 	}
@@ -17,7 +18,7 @@
 	$orgrow=$orgresult->FetchRow();//mysql_fetch_row($orgresult);
 	$thisorganism = $orgrow[0];
 	
-	$arrayurl = "http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=\n";
+	$arrayurl = "../agilentarrayinfo.php?arrayid=\n";
 	require './phpinc/organismurlselection.inc';
 	fwrite($fd, $arrayurl);
 	fwrite($fd, ".".$featureurl);

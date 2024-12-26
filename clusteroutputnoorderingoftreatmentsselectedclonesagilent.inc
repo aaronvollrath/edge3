@@ -6,8 +6,8 @@ $countSQL = "SELECT MAX(arrayid) from agilentdata";
 //echo "<br>$countSQL<br>";
 //echo "<br>maxarrayid : $maxarrayID<br>";
 // Determine what arrays were selected....
-	$arrayurl = "http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=\n";
-	$featureurl = "http://edge.oncology.wisc.edu/agilentfeatureinfo.php?featurenum=\n";
+	$arrayurl = "./agilentarrayinfo.php?arrayid=\n";
+	$featureurl = "./agilentfeatureinfo.php?featurenum=\n";
 	fwrite($fd, $arrayurl);
 	fwrite($fd, $featureurl);
 	$arrayidarray = array();

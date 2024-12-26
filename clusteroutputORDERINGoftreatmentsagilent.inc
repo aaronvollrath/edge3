@@ -4,11 +4,11 @@
 		// For each ordered arrayid, get the description....
 		$trxCounter = 0;
 
-$arrayurl = "http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=\n";
+$arrayurl = "./agilentarrayinfo.php?arrayid=\n";
 	if($thisorganism != 1){
-		$featureurl = "http://edge.oncology.wisc.edu/agilentfeatureinfo.php?featurenum=\n";
+		$featureurl = "./agilentfeatureinfo.php?featurenum=\n";
 	}else{
-		$featureurl = "http://edge.oncology.wisc.edu/ratagilentfeatureinfo.php?featurenum=\n";
+		$featureurl = "./ratagilentfeatureinfo.php?featurenum=\n";
 	}
 	fwrite($fd, $arrayurl);
 	fwrite($fd, $featureurl);

@@ -3,8 +3,8 @@
 		ORDERED SECTION...............
 		***********************************************************************************/
 		echo "This is ordered!";
-	$arrayurl = "http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=\n";
-	$featureurl = "http://edge.oncology.wisc.edu/agilentfeatureinfo.php?featurenum=\n";
+	$arrayurl = "./agilentarrayinfo.php?arrayid=\n";
+	$featureurl = "./agilentfeatureinfo.php?featurenum=\n";
 	fwrite($fd, $arrayurl);
 	fwrite($fd, $featureurl);
 		// For each ordered arrayid, get the description....
@@ -456,7 +456,9 @@
 			?>
 			</td>
 			<?php
-			}$cpsvgfile = "./IMAGES/imagesvg$filenum";
+			}
+			
+			$cpsvgfile = "./IMAGES/imagesvg$filenum";
 			//if($_SESSION['priv_level'] > 0){
 
    ?>

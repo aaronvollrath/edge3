@@ -1,6 +1,6 @@
 <?php
 /* file: outputimage.inc
-
+ This contains the function createImage which parses an svg file and creates an imagemap and image 
 
 
 */
@@ -199,30 +199,19 @@ global $font;
 			}
 		}
 		if($name == "A"){
-
-			//<a xlink:href="http://edge.oncology.wisc.edu/cloneinfosvg.php?cloneid=-1981_627" target="_blank" alt="">
 			foreach( $attrs as $attname => $value )
 			{
-				/*if($_SESSION['priv_level'] == 99){
-				echo "$attname:$value<br>";
-				}*/
 
 				if($attname == "XLINK:HREF"){
 					$href = $value;
-					//echo "$href <br>";
-					//$href = str_replace("http://edge.oncology.wisc.edu", ".", $href);
-					//fwrite($fd, $href);
 				}
 			}
 
 
 		}
 		if($name == "RECT"){
-			////echo "<hr>$name<br>";
-			//<rect x="0" y="18" width="10" height="6" style="fill: rgb(213,0,0);"/>
 			foreach( $attrs as $attname => $value )
 			{
-				////echo "$attname:$value<br>";
 				if($attname == "X"){
 					$x = $value;
 				}
@@ -262,52 +251,49 @@ global $font;
 						$rgb = str_replace(");", "", $rgb);
 						$rgb = explode(",", $rgb);
 						$count = 0;
-			foreach ($rgb as $val){
+						foreach ($rgb as $val){
 
-				if(is_numeric($val)){
-					////echo "$val is a number<br>";
-				}
-				if($count == 0){
+							if(is_numeric($val)){
+								////echo "$val is a number<br>";
+							}
+							if($count == 0){
 
-				$red = $val;
-				}
-				if($count == 1){
-					$green = $val;
-				}
-				if($count == 2){
-					$blue = $val;
-				}
-				$count++;
+							$red = $val;
+							}
+							if($count == 1){
+								$green = $val;
+							}
+							if($count == 2){
+								$blue = $val;
+							}
+							$count++;
 
-			}
+						}
 
-			$rect_color = imagecolorallocate($im3, $red, $green, $blue);
+						$rect_color = imagecolorallocate($im3, $red, $green, $blue);
 
-			/////echo "rect_color = imagecolorallocate($im3, $red, $green, $blue)<br>";
-			//allocatecolor($colorvar, $image, $red, $green, $blue);
-			//$rect_color = imagecolorallocate($im3, 240, 0, 0);
-			//$y = $translate_y + $y;
-			//$translate_x += $x;
-			$x1 = $x + $translate_x;
-			$y1 = $y + $translate_y;
-			$x2 = $x1 + $width;
-			$y2 = $y1 + $height;
-			////echo "imagefilledrectangle($im3, $x1, $y1 ,$x2, $y2, $rect_color)<br>";
-			if($href != ""){
-
-				$href = str_replace("http://edge.oncology.wisc.edu", ".", $href);
-				fwrite($fd, "<area href=\"$href\" shape=rect coords=\"$x1,$y1,$x2,$y2\" target=\"_blank\">");
-			};
-			imagefilledrectangle($im3, $x1, $y1 ,$x2,$y2,$rect_color);
+						/////echo "rect_color = imagecolorallocate($im3, $red, $green, $blue)<br>";
+						//allocatecolor($colorvar, $image, $red, $green, $blue);
+						//$rect_color = imagecolorallocate($im3, 240, 0, 0);
+						//$y = $translate_y + $y;
+						//$translate_x += $x;
+						$x1 = $x + $translate_x;
+						$y1 = $y + $translate_y;
+						$x2 = $x1 + $width;
+						$y2 = $y1 + $height;
+						////echo "imagefilledrectangle($im3, $x1, $y1 ,$x2, $y2, $rect_color)<br>";
+						if($href != ""){
+							$href = str_replace("..", ".", $href);
+							fwrite($fd, "<area href=\"$href\" shape=rect coords=\"$x1,$y1,$x2,$y2\" target=\"_blank\">");
+						};
+						imagefilledrectangle($im3, $x1, $y1 ,$x2,$y2,$rect_color);
 					}
 
 
 					////echo "rect_color = imagecolorallocate($im3, $rgb[0], $rgb[1], $rgb[2])";
 
-				}
-			}
-
-
+				} // end if($attname == "STYLE"){
+			} // end foreach( $attrs as $attname => $value )
 		}  // End if($name == RECT){
 
 		if($name == "TEXT"){
@@ -443,7 +429,7 @@ global $font;
 				if($href != ""){
 						$x2 = $x1 + 75;
 						$y2 = $y1 + 10;
-						$href = str_replace("http://edge.oncology.wisc.edu", ".", $href);
+						$href = str_replace("..", ".", $href);
 						//echo "$href <br>";
 						#fwrite($fd, "<area href=\"$href\" shape=rect coords=\"$x1,$y1,$x2,$y2\" target=\"_blank\">");
 						// Took out the above, because of issues with flex and charting components.
@@ -463,7 +449,7 @@ global $font;
 					if($href != ""){
 						$x2 = $x1 + 10;
 						$y2 = $y1 - 130;
-						$href = str_replace("http://edge.oncology.wisc.edu", ".", $href);
+						$href = str_replace("..", ".", $href);
 						fwrite($fd, "<area href=\"$href\" shape=rect coords=\"$x1,$y1,$x2,$y2\" target=\"_blank\">");
 					}
 					//imagestringup($im3, 3, $x1, $y1, $data, $text_color);
@@ -506,7 +492,7 @@ global $font;
 					if($href != ""){
 						$x2 = $x1 + 200;
 						$y2 = $y1 + 10;
-						$href = str_replace("http://edge.oncology.wisc.edu", ".", $href);
+						$href = str_replace("..", ".", $href);
 						fwrite($fd, "<area href=\"$href\" shape=rect coords=\"$x1,$y1,$x2,$y2\" target=\"_blank\">");
 					}
 				}

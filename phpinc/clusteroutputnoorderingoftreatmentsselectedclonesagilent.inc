@@ -33,7 +33,7 @@ $orgSQL = "SELECT arrayversion FROM agilentdata WHERE arrayid=$organismarraychec
 
 
  
-	$arrayurl = "http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=\n";
+	$arrayurl = "./agilentarrayinfo.php?arrayid=\n";
 	require './phpinc/organismurlselection.inc';
 	fwrite($fd, $arrayurl);
 

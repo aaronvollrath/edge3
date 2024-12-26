@@ -6,6 +6,9 @@ require 'globalfilelocations.inc';
 
 require 'utilityfunctions.inc'; # general utility functions file used throughout
 require 'edge_db_connect2.php';
+include 'edge_update_user_activity.inc';
+include 'outputimage.inc'; # used for creating an raster image from svg file
+include 'selectclusteringorderingmethod.inc.php';  # located in ./phpinc, checks posted values and also selects what algorithm is used.
 
 //die('after db connection script');
 //echo "after db connection script<hr>";
@@ -19,7 +22,7 @@ if(isset($_SESSION['userid'])){
 	echo "No user is logged in.";
 }
 //echo '<br>after checking to see if session variable userid is set.<br>';
-include 'edge_update_user_activity.inc';
+
 
  function utime (){
 $time = explode( " ", microtime());
@@ -36,16 +39,31 @@ $start = utime();
 	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 -->
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<html lang="en-US">
 <head>
+	<meta charset="UTF-8">
+	<title>EDGE<sup>3</sup> Data Analysis</title>
+
+	<!-- Stylesheets -->
 <link rel="stylesheet" type="text/css" href="./css/newlayout.css" title="layout" />
 <link rel="stylesheet" type="text/css" href="./css/ui.tabs.css" title="layout" />
-<title>EDGE^3</title>
+<link rel="stylesheet" type="text/css" href="./css/tablelayout.css" title="layout" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+	.checkbox-grid {
+		display: flex;
+		flex-wrap: wrap;
+		list-style-type: none;
+	}
+
+	.checkbox-grid li {
+		flex: 0 0 25%;
+	}
+</style>
+
 <?php
 
-include 'outputimage.inc'; # used for creating an raster image from svg file
-
-include 'selectclusteringorderingmethod.inc.php';  # located in ./phpinc, checks posted values and also selects what algorithm is used.
 $arraytypestring = "agilent";
 $arrayclusteringtype = 1;
 $arraydatatable = "agilentdata"; # what table are the data coming from?
@@ -66,51 +84,24 @@ $logged_in = 0;
 }
 ?>
 
-<!-- newly added... -->
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .checkbox-grid {
-            display: flex;
-            flex-wrap: wrap;
-            list-style-type: none;
-        }
-
-        .checkbox-grid li {
-            flex: 0 0 25%;
-        }
-    </style>
-
-
-
-
-
-
-<link rel="stylesheet" type="text/css" href="./css/tablelayout.css" title="layout" />
-
-<title>EDGE<sup>3</sup> Data Analysis</title>
 
 
 <?php
 	if(!isset($_POST['anova']) && !isset($_POST['ttest'])){
 ?>
 
- <script src="./javascript/jquery-1.2.6.min.js"></script>
+ 		<script src="./javascript/jquery-1.2.6.min.js"></script>
 
-  <script type="text/javascript" src="./javascript/jquery-uicore-tabs.js"></script> 
-  <script type="text/javascript" src="./javascript/formcheck2.js"></script>
-<script type="text/javascript" src="./javascript/radiocheckboxvalidation.js"></script>
-<link rel="stylesheet" href="./css/ui.tabs.css" type="text/css" media="print, projection, screen">
-  <script>
-
-
-  $(function() {
-                $('#tabs > ul').tabs({ fx: { height: 'toggle', opacity: 'toggle' } });
-		$('#tabsmenu > ul').tabs({ fx: { height: 'toggle', opacity: 'toggle' } });
-	
-  });
-
- </script>
+		<script type="text/javascript" src="./javascript/jquery-uicore-tabs.js"></script> 
+		<script type="text/javascript" src="./javascript/formcheck2.js"></script>
+		<script type="text/javascript" src="./javascript/radiocheckboxvalidation.js"></script>
+  		<script>
+			$(function() {
+							$('#tabs > ul').tabs({ fx: { height: 'toggle', opacity: 'toggle' } });
+					$('#tabsmenu > ul').tabs({ fx: { height: 'toggle', opacity: 'toggle' } });
+				
+			});
+ 		</script>
 <?php
 		
 	}
@@ -142,14 +133,14 @@ $logged_in = 0;
 
 		dojo.require("dijit.InlineEditBox");
 
-		dojo.addOnLoad(
+/* 		dojo.addOnLoad(
 
 			function(){
 
 			//dojo.byId('loaderInner').innerHTML += " done.";
 						//setTimeout("hideLoader()",250);
 
-			});
+			}); */
 
 		function hideLoader(){
 					var loader = dojo.byId('loader');
@@ -537,6 +528,7 @@ if($logged_in == 0){
 				<li> <a href="savedgenelistedit.php" target="_blank">Manage saved gene lists.</a><img id="managelisttooltip" src="./images/dialog-information12x12.png" align="top"/><div dojoType="dijit.Tooltip" connectId="managelisttooltip"><table width="350px"><tr><td><img src="./images/dialog-information12x12.png"/><strong><u>Quick Tip</u></strong></td></tr><tr><td>For more information and instructions, please see the <b>Useful Information/Instructions</b> section below.</td></tr></table></div></li>
 				</ul>
 				<!--
+				NOTE: This was removed as it is not really relevant to have the rna submission and experiment builder anymore 25DEC2024 aaron vollrath
 				<strong>Experiment Management</strong>
 				<ul>
 				<li><a href="./agilentexperiment-useradmin.php" target="new">RNA submission and Experiment Builder</a></li>

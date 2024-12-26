@@ -27,7 +27,7 @@ $debugid = 0;
 	$orgrow= $orgresult->FetchRow();//mysql_fetch_row($orgresult);
 	$thisorganism = $orgrow[0];
 
-	$arrayurl = "http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=\n";
+	$arrayurl = "./agilentarrayinfo.php?arrayid=\n";
 	require './phpinc/organismurlselection.inc';
 	fwrite($fd, $arrayurl);
 	fwrite($fd, $featureurl);

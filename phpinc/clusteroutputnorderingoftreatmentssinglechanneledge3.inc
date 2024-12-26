@@ -13,7 +13,7 @@ $countSQL = "SELECT MAX(arrayid) from $arraydatatable";
 // Determine what arrays were selected....
 //echo "csv file : $csvfd<br>";
 $userid = $_SESSION['userid'];
-	$arrayurl = "http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=\n";
+	$arrayurl = "./agilentarrayinfo.php?arrayid=\n";
 	for($i = 1; $i <= $maxarrayID;$i++){
 		$postval = "array$i";
 		if(isset($_POST[$postval])){
@@ -35,7 +35,7 @@ $userid = $_SESSION['userid'];
 		//analyze($_POST);
 
 	}
-$arrayurl = "http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=\n";
+$arrayurl = "./agilentarrayinfo.php?arrayid=\n";
 	require './phpinc/organismurlselection.inc';
 	fwrite($fd, $arrayurl);
 	fwrite($fd, $featureurl);

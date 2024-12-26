@@ -17,7 +17,7 @@ $countSQL = "SELECT MAX(arrayid) from $arraydatatable";
 $tempquery = $_POST['tempquery'];
 $savedquery = $_POST['savedquery'];
 $userid = $_SESSION['userid'];
-$arrayurl = "http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=\n";
+$arrayurl = "./agilentarrayinfo.php?arrayid=\n";
 	for($i = 1; $i <= $maxarrayID;$i++){
 		$postval = "array$i";
 		if(isset($_POST[$postval])){
@@ -36,7 +36,7 @@ $arrayurl = "http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=\n";
 			}
 		}
 	}
-	$arrayurl = "http://edge.oncology.wisc.edu/agilentarrayinfo.php?arrayid=\n";
+	$arrayurl = "./agilentarrayinfo.php?arrayid=\n";
 	require './phpinc/organismurlselection.inc';
 	fwrite($fd, $arrayurl);
 	fwrite($fd, $featureurl);

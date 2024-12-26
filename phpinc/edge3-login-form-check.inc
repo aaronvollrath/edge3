@@ -91,7 +91,8 @@ elseif(isset($_POST['Login'])) {  // if form has been submitted...
 	$logged_in = 1;
 	$_POST['uname'] = stripslashes($_POST['uname']);
 	$_SESSION['username'] = $_POST['uname'];
-	$_SESSION['password'] = $_POST['passwd'];
+	// 25DEC2024 - commented out this session variable assignment for security purposes.
+	#$_SESSION['password'] = $_POST['passwd'];
 	//echo "AT end of login-form-check....<br>";
 	$_SESSION['logged_in'] = 1;
 
